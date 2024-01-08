@@ -1,0 +1,273 @@
+@import "./varibales.scss";
+
+.section-career-page {
+  z-index: 2;
+  padding: 0px 0px 120px 0px;
+
+  .career-bg-img {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background: url("/assets/images/careers-bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .career-form-content {
+    background: $--white;
+    width: 100%;
+    max-width: 1040px;
+    padding: 120px;
+    margin: 0px auto;
+    border-radius: 64px;
+
+    .career-title h1 {
+      color: $--navy-9;
+      text-align: center;
+      font-family: 'Hiragino Kaku Gothic ProN W3';
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 20px;
+    }
+
+    .career-form {
+      margin: 56px 0px;
+
+      .career-form-input {
+        display: flex;
+        column-gap: 32px;
+        align-items: flex-start;
+        margin-bottom: 32px;
+
+        .place-holder-text {
+          color: #1E293B;
+          font-family: 'Meiryo';
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+        }
+
+
+        .input-label {
+          width: 100%;
+          max-width: 200px;
+          display: flex;
+          padding-top: 8px;
+        }
+
+        .input-label label {
+          color: $--navy-9;
+          font-family: 'Hiragino Kaku Gothic ProN W6';
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 18px;
+          letter-spacing: 0.9px;
+          margin-bottom: 0px;
+        }
+
+        .input-label span {
+          border-radius: 2px;
+          background: #ffe066;
+          display: inline-block;
+          margin-left: 8px;
+          padding: 4px 8px;
+          font-size: 12px;
+          font-family: 'Hiragino Kaku Gothic ProN W6';
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 12px;
+        }
+
+        .form-input {
+          width: 100%;
+          color:  #1E293B;
+          font-family: 'Meiryo';
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+        }
+
+        :focus-visible {
+          outline: 0px;
+        }
+
+        .form-input input {
+          height: 48px;
+          width: 100%;
+          border-radius: 4px;
+          border: 1px solid #a3a3a3;
+          background: $--white;
+          padding: 12px;
+        }
+
+        .form-input input[type='tel'] {
+          border-radius: 0 4px 4px 0;
+        }
+
+        .form-input select {
+          height: 48px;
+          width: 100%;
+          border-radius: 4px;
+          border: 1px solid #a3a3a3;
+          background: $--white;
+          padding: 12px;
+          font-size: 16px;
+        }
+
+        .form-input textarea {
+          height: 48px;
+          width: 100%;
+          border-radius: 4px;
+          border: 1px solid #a3a3a3;
+          background: $--white;
+          padding: 16px;
+          height: 128px;
+        }
+
+        .form-input input:hover,
+        .form-input select:hover,
+        .form-input textarea:hover {
+          border: 1px solid $--navy-navy-8;
+          box-shadow: none;
+        }
+
+        .form-input input:focus,
+        .form-input select:focus,
+        .form-input textarea:focus {
+          border: 2px solid $--navy-navy-8;
+          box-shadow: none;
+        }
+
+        .form-input input.error-validation:hover,
+        .form-input select.error-validation:hover,
+        .form-input textarea.error-validation:hover {
+          border: 1px solid $--red-600;
+          box-shadow: none;
+        }
+
+        .form-input input.error-validation:focus,
+        .form-input select.error-validation:focus,
+        .form-input textarea.error-validation:focus {
+          border: 2px solid $--red-600;
+          box-shadow: none;
+        }
+
+        .form-input input[type='number']::-webkit-inner-spin-button,
+        .form-input input[type='number']::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+        }
+
+        .form-input input[type='number'] {
+          -moz-appearance: textfield;
+        }
+
+      }
+    }
+
+    .career-agree-title p {
+      color: #575757;
+      font-family: 'Hiragino Kaku Gothic ProN W3';
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+
+    .career-agree-title a {
+      color: #1723a9;
+      font-family: 'Hiragino Kaku Gothic ProN W3';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 150%;
+    }
+
+    .career-agree-title a:hover {
+      text-decoration: none;
+    }
+
+    .career-form-submit-btn {
+      display: flex;
+      width: 400px;
+      height: 72px;
+      padding: 0px 32px;
+      justify-content: center;
+      align-items: center;
+      margin: 24px auto 0px auto;
+      border: 0px;
+      border-radius: 100px;
+      background: linear-gradient(142deg, #102f9e 0%, #4800a5 100%);
+      box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+      font-weight: 600;
+      line-height: 27px;
+      letter-spacing: 0.9px;
+      font-family: 'Hiragino Kaku Gothic ProN W6';
+      font-size: 18px;
+      transition: 0.5s;
+    }
+
+    .career-form-submit-btn:hover {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.20) 100%), linear-gradient(98deg, #102F9E 2.96%, #4800A5 105.92%);
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .section-career-page {
+    padding: 0px 0px 80px 0px;
+
+    .career-form-content {
+      padding: 32px;
+      margin: 0px auto;
+      border-radius: 24px;
+
+      .career-title h1 {
+        line-height: 30px;
+      }
+
+      .career-form {
+        margin: 40px 0px;
+
+        .career-form-input {
+          display: flex;
+          flex-direction: column;
+          column-gap: 24px;
+          align-items: flex-start;
+          margin-bottom: 24px;
+
+          .input-label {
+            margin-bottom: 16px;
+          }
+
+          .form-input select {
+            height: 48px;
+            width: 100%;
+            border-radius: 4px;
+            border: 1px solid #a3a3a3;
+            background: $--white;
+            padding: 12px;
+          }
+        }
+      }
+
+      .career-agree-title p {
+        text-align: left;
+      }
+
+      .career-form-submit-btn {
+        height: 56px;
+        width: 296px;
+        padding: 0px 32px;
+        margin: 16px auto 0px auto;
+      }
+    }
+  }
+}

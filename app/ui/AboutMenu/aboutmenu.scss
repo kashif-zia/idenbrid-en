@@ -1,0 +1,107 @@
+@import '../../../public/assets/css/varibales.scss';
+
+.about-idenbrid-box {
+  padding: 64px 0;
+  border-radius: 32px;
+  background: $--white;
+  margin: 64px 0px 80px;
+  // max-width: 1376px;
+  // width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  .heading-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .about-h2 {
+    position: relative;
+    z-index: 1;
+    color: $--navy-9;
+    font-family: 'Brandon Grotesque Bold';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+  .right-arrowimg {
+    margin-left: -6px;
+    width: auto;
+  }
+
+  div {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .menu-idenbrid {
+    display: flex;
+    list-style: none;
+    column-gap: 24px;
+    padding-left: 0px;
+    margin-top: 16px;
+    margin-bottom: 0;
+    width: 100%;
+
+    li {
+      border-right: 1px solid $--envelope-white;
+      padding: 0 24px 0 0;
+    }
+
+    a {
+      color: $--navy-9;
+      font-family: 'Hiragino Kaku Gothic ProN W6';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0.8px;
+    }
+
+    :hover {
+      text-decoration: none;
+    }
+
+    :nth-last-child(1) {
+      border-right: 0px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .about-idenbrid-box {
+    padding: 32px 32px 16px;
+    margin: 48px 9px;
+
+    div {
+      width: 100%;
+      padding: 0 4px;
+    }
+
+    .heading-box {
+      margin-bottom: 24px;
+    }
+
+    .menu-idenbrid {
+      flex-direction: column;
+      gap: 0px;
+      margin-top: 0;
+
+      li {
+        border-right: 0px;
+        border-top: 1px solid $--envelope-white;
+        padding-right: 0px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+      }
+
+      :nth-last-child(1) {
+        border-bottom: 0px;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/contactus": {
+      "name": "/contactus",
+      "lambdaFunction": "idenbridJPContactUsHandler",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

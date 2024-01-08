@@ -1,0 +1,219 @@
+@import 'public/assets/css/varibales.scss';
+
+.section-digital-peer {
+	margin: 120px 0px 0px;
+
+  .section-digital-peer-content {
+    // max-width: 1376px;
+    border-radius: 32px;
+    background: #fff;
+    padding: 80px 64px 48px 64px;
+    position: relative;
+    z-index: 1;
+    // margin: auto;
+    .custom-padding {
+      padding: 0px auto 0px auto;
+    }
+    .digital-peer-title h3 {
+      color: $--navy-9;
+      font-family: 'Brandon Grotesque Bold';
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: 1.6px;
+      margin-bottom: 20px;
+      font-weight: 450;
+      font-style: normal;
+    }
+    .digital-peer-title span {
+      color: $--navy-9;
+      font-family: 'Brandon Grotesque Bold';
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 0.64px;
+      text-transform: none;
+      font-weight: 450;
+    }
+    .inhouse-product-heading h3 {
+      color: $--navy-9;
+      font-family: 'Hiragino Kaku Gothic ProN W6';
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 28.8px;
+      letter-spacing: 1.2px;
+      margin-bottom: 16px;
+      padding-right: 48px;
+    }
+    .inhouse-product-desc p {
+      color: $--neutral-8;
+      font-family: 'Hiragino Kaku Gothic ProN W3';
+      font-size: 14px;
+      line-height: 28px;
+      letter-spacing: 0.7px;
+      padding-right: 48px;
+      font-weight: 300;
+    }
+    .inhouse-product-view-more-button {
+      position: relative;
+      z-index: 2;
+    }
+
+    .inhouse-product-view-more-button a {
+      color: $--navy-9;
+      font-family: 'Brandon Grotesque Bold';
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 450;
+      letter-spacing: 0.8px;
+      display: flex;
+      align-items: center;
+    }
+    :hover {
+      text-decoration: none;
+    }
+    .inhouse-product-view-more-button a:hover .rightarrow-svg svg rect {
+      fill: $--yellow-yellow-4;
+      transition: 0.5s;
+    }
+    .rightarrow-svg {
+      top: 2px;
+      margin-left: -6px;
+      position: relative;
+      z-index: -1;
+    }
+    .nav-pills .nav-link {
+      background-color: transparent;
+      color: $--navy-9;  
+      padding: 34px 8px;
+      border-top: 1px solid #d0d0e7;
+      border-radius: 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      opacity: 0.4;
+    }
+    .tab-label{
+      display: flex;
+      flex-direction: column;
+      row-gap: 4px;
+    }
+    .tab-main-label{
+      font-family: 'Brandon Grotesque Bold';
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 450;
+      line-height: 27px; 
+      letter-spacing: 0.72px;
+    }
+    .tab-sub-label{
+      font-family: 'Hiragino Kaku Gothic ProN W6';
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 21.6px;
+      letter-spacing: 0.6px;
+    }
+    .nav-pills .nav-link.active {
+      border-top: 1px solid $--navy-9;
+      opacity: 1;
+    }
+    img {
+      border-radius: 16px;
+      aspect-ratio: 4 / 2;
+     
+    }
+    .inhouse-product-view-more-button img {
+      margin-left: -13px;
+      position: relative;
+      z-index: -1;
+    }
+    .digitalpeer-above {
+      margin-bottom: 60px !important;
+    }
+    .right-images-container{
+      padding-right: 0;
+      padding-left: 25px;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+	.section-digital-peer {
+		margin: 32px 9px 64px;
+		// padding: 0px 16px;
+		.section-digital-peer-content {
+			border-radius: 16px;
+			padding: 24px 9px;
+			.custom-padding {
+				padding: 0px;
+				margin-bottom: 0px !important;
+			}
+			.digital-peer-title {
+				display: flex;
+				align-items: baseline;
+				column-gap: 7px;
+			}
+			.digital-peer-title h3 {
+				font-size: 32px;
+				line-height: 32px;
+				letter-spacing: 1.28px;
+				margin-bottom: 20px;
+			}
+
+			.inhouse-product-heading h3 {
+				padding-right: 0;
+			}
+			.inhouse-product-desc p {
+				padding-right: 0;
+			}
+
+			.digital-peer-title span {
+				font-size: 14px;
+				line-height: 14px;
+				letter-spacing: 0.56px;
+			}
+			.inhouse-product-heading h3 {
+				font-size: 18px;
+				line-height: 21.6px;
+				letter-spacing: 0.9px;
+			}
+			.inhouse-product-view-more-button {
+				position: relative;
+				z-index: 2;
+			}
+			.product-img {
+				margin-bottom: 16px;
+			}
+			.inhouse-product-view-more-button img {
+				margin-left: -13px;
+				position: relative;
+				z-index: -1;
+			}
+			.nav-pills .nav-link {
+				padding: 16px 8px;
+				opacity: 0.2;
+				border-top: 1px solid #141485;
+				font-weight: 450;
+			}
+			.digitalpeer-above {
+				margin-bottom: 24px !important;
+			}
+			.right-images-container {
+				padding: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 450px) {
+	.section-digital-peer {
+		.section-digital-peer-content {
+			.digitalpeer-above {
+				padding: 0;
+			}
+		}
+	}
+}
+@media (max-width: 500px) {
+	.section-digital-peer {
+		margin-bottom: 35px;
+	}
+}

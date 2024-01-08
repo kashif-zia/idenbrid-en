@@ -1,0 +1,219 @@
+@import './varibales.scss';
+
+.section-services {
+	.service-bg-img {
+		width: -webkit-fill-available;
+		height: -webkit-fill-available;
+		background: url('/assets/images/service-bg.png');
+		background-size: 100% 100%;
+		background-repeat: repeat;
+		position: absolute;
+		right: 0;
+		z-index: -1;
+	}
+	.service-card {
+		border-radius: 64px;
+		background: $--white;
+		box-shadow: 0px 8px 40px 0px rgba(20, 20, 133, 0.08);
+		padding: 24px 24px 40px 24px;
+		position: relative;
+		margin-bottom: 80px;
+		.services-card-content {
+			padding-bottom: 96px;
+		}
+		.service-image img {
+			width: 100%;
+			height: auto;
+			border-radius: 32px;
+		}
+		.about-service-left {
+			padding: 56px 64px 0px 64px;
+			background-color: $--white;
+			position: absolute;
+			bottom: 0px;
+			width: 100%;
+			border-radius: 0px 24px 0px 0px;
+			.services-country-flags {
+				display: flex;
+				align-items: center;
+				column-gap: 8px;
+
+				.flag img {
+					border-radius: 4px;
+					box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+				}
+			}
+		}
+		.about-service-right {
+			padding: 56px 64px 0px 64px;
+			border-radius: 24px 0px 0px 0px;
+		}
+		.about-service-left {
+			.business-name h3 {
+				color: $--navy-9;
+				font-family: 'Hiragino Kaku Gothic ProN W6';
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 17.5px;
+				letter-spacing: 0.7px;
+				margin-bottom: 12px;
+			}
+			.business-title p {
+				color: $--navy-9;
+				font-family: 'Brandon Grotesque Bold';
+				font-size: 32px;
+				font-weight: 450;
+				line-height: 40px;
+				letter-spacing: 1.6px;
+				margin-bottom: 12px;
+			}
+		}
+		.about-service-right-content {
+			margin-left: 30px;
+			.business-desc p {
+				color: $--navy-9;
+				font-family: 'Hiragino Kaku Gothic ProN W3';
+				font-size: 14px;
+				line-height: 25.2px;
+				letter-spacing: 0.7px;
+				font-weight: 300;
+				margin-bottom: 20px;
+			}
+			.about-idenbrid-button {
+				position: relative;
+				z-index: 2;
+			}
+			.about-idenbrid-button a:hover .right-arrow svg rect {
+				fill: $--yellow-yellow-4;
+				transition: 0.5s;
+			}
+			.about-idenbrid-button a {
+				color: $--navy-9;
+				font-family: 'Brandon Grotesque Bold';
+				font-size: 16px;
+				font-weight: 450;
+				line-height: 28px;
+				letter-spacing: 0.8px;
+				display: flex;
+			}
+			.right-arrow {
+				margin-left: -6px;
+				// position: absolute;
+				z-index: -1;
+			}
+		}
+	}
+	.space {
+		margin-bottom: 80px;
+		.section-digital-peer {
+			margin-top: 0px;
+			.section-digital-peer-content {
+				.container {
+					padding: 0px;
+				}
+				// border-radius: 0px 0px 24px 24px;
+				// padding: 0px 24px 24px 24px;
+				// .digitalpeer-above{
+				//   margin-bottom: 40px !important;
+				// }
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.section-services {
+		.service-card {
+			.services-card-content {
+				padding-bottom: 24px;
+			}
+			.about-service-left {
+				position: relative;
+				padding: 24px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.section-services {
+		.service-bg-img {
+			top: 6%;
+		}
+		.service-card {
+			.services-card-content {
+				padding-bottom: 24px;
+			}
+			border-radius: 24px 24px 0px 0px;
+			padding: 24px 24px 0px 24px;
+			margin-bottom: 0;
+
+			.service-image img {
+				width: 100%;
+				height: auto;
+				border-radius: 16px;
+			}
+
+			.about-service-left {
+				padding: 24px;
+				position: relative;
+
+				.services-country-flags {
+					display: flex;
+					align-items: center;
+					column-gap: 8px;
+				}
+			}
+
+			.about-service-left {
+				padding: 24px 0px;
+
+				.business-title p {
+					font-size: 24px;
+					line-height: 30px;
+					letter-spacing: 1.2px;
+				}
+			}
+
+			.about-service-right {
+				padding-bottom: 88px;
+			}
+
+			.about-service-right-content {
+				margin-left: 0px;
+				.business-desc p {
+					line-height: 28px;
+					margin: 20px 0px 16px;
+					color: $--neutral-8;
+				}
+			}
+		}
+		.space {
+			margin-bottom: 64px;
+			.section-digital-peer {
+				margin: 0px;
+				.section-digital-peer-content {
+					border-radius: 0px 0px 24px 24px;
+					padding: 0px 24px 24px 24px;
+					.digitalpeer-above {
+						margin-bottom: 40px !important;
+					}
+				}
+			}
+		}
+		.digitalpeer-above {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+	.section-services {
+		.service-card {
+			.about-service-left {
+				// padding: 24px 24px 0px 24px;
+				padding: 24px 40px 0px 40px;
+			}
+		}
+	}
+}

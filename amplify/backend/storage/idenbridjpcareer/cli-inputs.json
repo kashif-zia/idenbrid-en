@@ -1,0 +1,14 @@
+{
+  "resourceName": "idenbridjpcareer",
+  "tableName": "idenbridjpcareer",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "createdAt",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

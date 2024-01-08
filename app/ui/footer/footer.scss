@@ -1,0 +1,135 @@
+@import '../../../public/assets/css/varibales.scss';
+.main-footer {
+	padding: 64px 25px 0px;
+	border-top: 1px solid $--envelope-white;
+
+	.footertop-area {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.socialbtn-group {
+		display: flex;
+		column-gap: 8px;
+	}
+
+	.footer-btn {
+		border-radius: 100px;
+		background: var(--grad-1, linear-gradient(142deg, #102f9e 0%, #4800a5 100%));
+		box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+		border: none;
+		width: 221px;
+		height: 48px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		color: $--white;
+		font-size: 14px;
+		font-family: 'Hiragino Kaku Gothic StdN W6';
+		font-weight: 600;
+		letter-spacing: 0.7px;
+		line-height: 21px;
+		transition: 0.5s all;
+	}
+	.footer-btn:hover {
+		color: $--white;
+		text-decoration: none;
+		background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%),
+			linear-gradient(98deg, #102f9e 2.96%, #4800a5 105.92%);
+	}
+
+	.footer-menu-list {
+		padding-top: 32px;
+		padding-bottom: 64px;
+		display: flex;
+		column-gap: 32px;
+		align-items: center;
+	}
+
+	.footer-menu a {
+		color: $--navy-9;
+		font-family: 'Brandon Grotesque Bold';
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 16px;
+		letter-spacing: 0.8px;
+	}
+
+	.copyright {
+		padding-bottom: 24px;
+
+		p {
+			color: $--navy-9;
+			text-align: right;
+			font-family: 'Brandon Grotesque Regular';
+			font-size: 10px;
+			font-style: normal;
+			font-weight: 390;
+			line-height: 10px;
+			letter-spacing: 0.5px;
+		}
+	}
+
+	.social-icons {
+		display: flex;
+		column-gap: 24px;
+	}
+
+	.social-icons img {
+		width: 14px;
+		height: 16px;
+		background: var(--grad-1, linear-gradient(142deg, #102f9e 0%, #4800a5 100%));
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.main-footer {
+		padding: 64px 9px 0px;
+
+		.socialbtn-group {
+			justify-content: center;
+			margin-bottom: 32px;
+		}
+
+		.footertop-area {
+			flex-direction: column-reverse;
+		}
+
+		.copyright p {
+			text-align: left;
+		}
+
+		.footer-menu-list {
+			flex-direction: column;
+			align-items: flex-start;
+			row-gap: 16px;
+			padding-top: 16px;
+			padding-bottom: 24px;
+		}
+		.social-icons {
+			margin-top: 8px;
+		}
+	}
+}
+@media only screen and (max-width: 768px) {
+	.main-footer .footer-menu a {
+		padding: 0px;
+	}
+}
+@media only screen and (max-width: 475px) {
+	.main-footer {
+		.socialbtn-group {
+			flex-direction: column;
+			gap: 12px;
+		}
+		.footer-btn {
+			width: 100%;
+			height: 56px;
+		}
+		.footer-menu-list {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+}

@@ -1,0 +1,304 @@
+@import './varibales.scss';
+
+.aboutcomapany-bgimg {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  background: url('/assets/images/about-company-bg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  z-index: -1;
+}
+
+#company.about-company-section {
+  background: inherit;
+  border-radius: 70px 70px 0px;
+  background-color: #122d9e;
+
+  .aboutcompany-box {
+    background: $--white;
+    padding: 120px 0px 120px;
+    border-radius: 64px 64px 32px 0px;
+  }
+
+  .policy-img {
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+  }
+
+  .about-company-h2 {
+    color: $--navy-9;
+    font-family: 'Hiragino Kaku Gothic ProN W6';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 1.2px;
+    margin-bottom: 24px;
+  }
+
+  .about-company-text {
+    color: $--neutral-neutral-8;
+    font-family: 'Hiragino Kaku Gothic ProN W3';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28.8px;
+    padding-right: 34px;
+  }
+}
+
+.mission-vision-section {
+  background-color: $--white;
+
+  .mission-vision-box {
+    border-radius: 32px 0px 32px 0px;
+    background-image: url('/assets/images/mission-bg-img.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0px;
+    position: relative;
+    padding: 80px 0px;
+    z-index: 0;
+  }
+
+  .row-first {
+    margin-bottom: 80px;
+  }
+
+  .about-idenbrid-subtext {
+    color: $--white;
+    font-family: 'Hiragino Kaku Gothic ProN W6';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0.7px;
+    margin-bottom: 8px;
+  }
+
+  .about-idenbrid-h2 {
+    color: $--white;
+    font-family: 'Hiragino Kaku Gothic ProN W6';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+
+  .idenbrid-intro {
+    color: $--white;
+    font-family: 'Hiragino Kaku Gothic ProN W3';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28.8px;
+    margin: 0px;
+  }
+
+  .about-opl-h3 {
+    color: #ffe066;
+    font-family: 'Brandon Grotesque Regular';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 390;
+    line-height: 48px;
+  }
+
+  .about-olp-p {
+    color: #ffe066;
+    font-family: 'Hiragino Kaku Gothic ProN W3';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    margin-bottom: 8px;
+  }
+
+  .olp-h2 {
+    color: $--white;
+    font-family: 'Brandon Grotesque Bold';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 60px;
+    letter-spacing: 0.8px;
+    margin-bottom: 16px;
+  }
+
+  .olp-text {
+    color: $--white;
+    font-family: 'Hiragino Kaku Gothic ProN W3';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28.8px;
+    letter-spacing: 0.8px;
+    margin: 0px;
+  }
+
+  .olp-row {
+    margin-bottom: 48px;
+  }
+}
+
+.aboutcompany-card-section {
+  background-color: #122d9e;
+  border-radius: 0px 32px 70px 70px;
+  margin-top: 0px;
+
+  .aboutcompany-card-box {
+    padding: 160px 0px 104px;
+    background: $--white;
+    border-radius: 32px 0px 64px 64px;
+    .business-card-content {
+      padding-left: 17px;
+      padding-right: 17px;
+    }
+  }
+
+  .aboutcard-img {
+    border-radius: 8px;
+    width: 100%;
+    height: 264px;
+  //  object-fit: cover;
+  }
+
+  .aboutcard-h2 {
+    color: $--navy-9;
+    font-family: 'Hiragino Kaku Gothic ProN W6';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21.6px;
+    letter-spacing: 0.8px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    padding-right: 34px;
+  }
+
+  .aboutcard-p {
+    color: $--neutral-neutral-8;
+    font-family: 'Hiragino Kaku Gothic ProN W3';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28.8px;
+    letter-spacing: 0.8px;
+    padding-right: 34px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #company.about-company-section {
+    padding: 0px;
+    background-color: inherit;
+
+    .policy-img {
+      margin-bottom: 24px;
+      border-radius: 8px;
+    }
+
+    .aboutcompany-box {
+      padding: 32px 17px;
+      border-radius: 24px 24px 0px 0px;
+    }
+
+    .about-company-h2 {
+      font-size: 20px;
+      margin-bottom: 24px;
+      line-height: 30px;
+    }
+    .about-company-text {
+      padding-right: 0;
+    }
+  }
+
+  .mission-vision-section {
+    padding: 0px;
+    border-radius: 0px;
+
+    .idenbrid-intro {
+      font-size: 14px;
+    }
+
+    .about-opl-h3 {
+      font-size: 28px;
+      line-height: 28px;
+      margin-bottom: 8px;
+    }
+
+    .about-olp-p {
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    .olp-h2 {
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 16px;
+    }
+
+    .mission-vision-box {
+      border-radius: 24px;
+      padding: 32px 17px;
+    }
+
+    .row-first {
+      margin-bottom: 24px;
+    }
+
+    .olp-row:nth-last-child(1) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .aboutcompany-card-section {
+    padding: 0px;
+    background-color: inherit;
+
+    .aboutcard-p {
+      margin-bottom: 64px;
+    }
+
+    .aboutcompany-card-box {
+      padding: 32px 17px;
+      border-radius: 0px 0px 32px 32px;
+      box-shadow: 0px 8px 40px 0px rgba(20, 20, 133, 0.08);
+      .business-card-content {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .mission-vision-section {
+    .mission-vision-box {
+       background-image: url('/assets/images/busines-bg.png');
+      /* background-size: cover; */
+      background-repeat: no-repeat;
+      border-radius: 24px;
+      background-position: right;
+    }
+  }
+
+  .aboutcompany-card-section {
+    .aboutcard-img{
+      padding-right: 0;
+      max-height: 236px;
+      height: 100%;
+    
+
+    }
+    .aboutcard-h2,
+    .aboutcard-p {
+      padding-right: 0;
+    }
+  }
+}

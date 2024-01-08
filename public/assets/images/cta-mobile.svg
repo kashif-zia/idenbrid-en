@@ -1,0 +1,60 @@
+<svg width="312" height="392" viewBox="0 0 312 392" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_473_22143)">
+<rect width="312" height="392" rx="32" fill="url(#paint0_linear_473_22143)"/>
+<g opacity="0.2">
+<circle cx="183" cy="158" r="3" fill="white"/>
+<circle cx="153" cy="158" r="3" fill="white"/>
+<circle cx="123" cy="158" r="3" fill="white"/>
+<circle cx="93" cy="158" r="3" fill="white"/>
+<circle cx="63" cy="158" r="3" fill="white"/>
+<circle cx="33" cy="158" r="3" fill="white"/>
+<circle cx="3" cy="158" r="3" fill="white"/>
+<circle cx="183" cy="128" r="3" fill="white"/>
+<circle cx="153" cy="128" r="3" fill="white"/>
+<circle cx="123" cy="128" r="3" fill="white"/>
+<circle cx="93" cy="128" r="3" fill="white"/>
+<circle cx="63" cy="128" r="3" fill="white"/>
+<circle cx="33" cy="128" r="3" fill="white"/>
+<circle cx="3" cy="128" r="3" fill="white"/>
+<circle cx="183" cy="98" r="3" fill="white"/>
+<circle cx="153" cy="98" r="3" fill="white"/>
+<circle cx="123" cy="98" r="3" fill="white"/>
+<circle cx="93" cy="98" r="3" fill="white"/>
+<circle cx="63" cy="98" r="3" fill="white"/>
+<circle cx="33" cy="98" r="3" fill="white"/>
+<circle cx="3" cy="98" r="3" fill="white"/>
+<circle cx="183" cy="68" r="3" fill="white"/>
+<circle cx="153" cy="68" r="3" fill="white"/>
+<circle cx="123" cy="68" r="3" fill="white"/>
+<circle cx="93" cy="68" r="3" fill="white"/>
+<circle cx="63" cy="68" r="3" fill="white"/>
+<circle cx="33" cy="68" r="3" fill="white"/>
+<circle cx="3" cy="68" r="3" fill="white"/>
+<circle cx="183" cy="38" r="3" fill="white"/>
+<circle cx="153" cy="38" r="3" fill="white"/>
+<circle cx="123" cy="38" r="3" fill="white"/>
+<circle cx="93" cy="38" r="3" fill="white"/>
+<circle cx="63" cy="38" r="3" fill="white"/>
+<circle cx="33" cy="38" r="3" fill="white"/>
+<circle cx="3" cy="38" r="3" fill="white"/>
+<circle cx="183" cy="8" r="3" fill="white"/>
+<circle cx="153" cy="8" r="3" fill="white"/>
+<circle cx="123" cy="8" r="3" fill="white"/>
+<circle cx="93" cy="8" r="3" fill="white"/>
+<circle cx="63" cy="8" r="3" fill="white"/>
+<circle cx="33" cy="8" r="3" fill="white"/>
+<circle cx="3" cy="8" r="3" fill="white"/>
+</g>
+<path d="M224 45.5C224 41.7528 222.973 38.0774 221.03 34.873C219.088 31.6686 216.304 29.058 212.982 27.3248C209.66 25.5915 205.926 24.8021 202.187 25.0421C198.447 25.2822 194.845 26.5426 191.772 28.6864L193.976 31.8469C196.472 30.1061 199.397 29.0827 202.434 28.8877C205.47 28.6928 208.502 29.3339 211.2 30.7413C213.897 32.1487 216.158 34.2686 217.735 36.8706C219.312 39.4726 220.146 42.4572 220.146 45.5H224Z" fill="white"/>
+<path opacity="0.2" d="M204.305 64.8018C203.336 68.4213 203.376 72.2373 204.423 75.8353C205.47 79.4332 207.483 82.6753 210.244 85.2094C213.004 87.7434 216.406 89.4723 220.08 90.2083C223.755 90.9443 227.56 90.6591 231.084 89.3838L229.772 85.7603C226.911 86.7959 223.821 87.0274 220.837 86.4298C217.854 85.8322 215.091 84.4282 212.85 82.3706C210.608 80.3129 208.973 77.6802 208.123 74.7586C207.273 71.837 207.24 68.7382 208.028 65.7992L204.305 64.8018Z" fill="white"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_473_22143" x1="13.5487" y1="-28.91" x2="373.593" y2="9.32747" gradientUnits="userSpaceOnUse">
+<stop stop-color="#102F9E"/>
+<stop offset="1" stop-color="#4800A5"/>
+</linearGradient>
+<clipPath id="clip0_473_22143">
+<rect width="312" height="392" rx="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>

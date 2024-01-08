@@ -1,0 +1,228 @@
+@import './varibales.scss';
+
+.message-bg {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  background: url('/assets/images/message-bg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  z-index: -1;
+}
+
+.message-first-section {
+  border-radius: 64px;
+  background: $--white;
+  padding: 120px 0px;
+  box-shadow: 0px 8px 40px 0px rgba(20, 20, 133, 0.08);
+
+  .message-h2 {
+    color: $--navy-9;
+    font-family: 'Hiragino Kaku Gothic ProN W6';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 1.2px;
+    margin-bottom: 24px;
+    padding-right: 49px;
+    max-width: 450px;
+  }
+
+  .ceo-text {
+    color: $--neutral-neutral-8;
+    font-family: 'Hiragino Kaku Gothic ProN W3';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28.8px;
+    margin-bottom: 24px;
+    padding-right: 34px;
+    margin-bottom: 24px;
+  }
+
+  .ceo-bottom-info {
+    text-align: right;
+    padding-right: 34px;
+
+    .date,
+    .comapany-name {
+      margin-bottom: 0px;
+      color: $--neutral-neutral-8;
+      text-align: right;
+      font-family: 'Hiragino Kaku Gothic ProN W3';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 21px;
+    }
+  }
+  .ceo-mob-img{
+    display: none;
+  }
+  .ceo-img {
+    border-radius: 24px;
+    width: 100%;
+    max-width: 504px;
+    height: 504px;
+  }
+
+  .ceo-name {
+    color: $--neutral-neutral-8;
+    text-align: right;
+    font-family: 'Hiragino Kaku Gothic ProN W3';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 36px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 10px 0px;
+    max-width: 504px;
+    width: 100%;
+    .facebook-icon a,
+    .linkedin-icon a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--grad-1, linear-gradient(142deg, #102f9e 0%, #4800a5 100%));
+      line-height: 0;
+    }
+
+    svg path {
+      fill: #fff;
+    }
+    svg{
+      fill: var(--grad-1, linear-gradient(142deg, #102f9e 0%, #4800a5 100%));
+    }
+  }
+}
+
+.message-second-section {
+  margin-top: 64px;
+  border-radius: 64px;
+  background: $--white;
+  padding: 120px 0px;
+  box-shadow: 0px 8px 40px 0px rgba(20, 20, 133, 0.08);
+
+  .message-h2 {
+    color: $--navy-9;
+    font-family: 'Hiragino Kaku Gothic ProN W6';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 1.2px;
+    margin-bottom: 24px;
+    padding-left: 49px;
+    max-width: 450px;
+  }
+
+  .ceo-text {
+    color: $--navy-9;
+    font-family: 'Hiragino Kaku Gothic ProN W3';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28.8px;
+    padding-left: 34px;
+    margin-bottom: 24px;
+  }
+
+  .ceo-bottom-info {
+    text-align: right;
+
+    .date,
+    .comapany-name {
+      margin-bottom: 0px;
+      color: $--navy-9;
+      text-align: right;
+      font-family: 'Hiragino Kaku Gothic ProN W3';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 21px;
+    }
+  }
+
+  // .ceo-img {
+  //   border-radius: 24px;
+  //   width: 100%;
+  //   height: 584px;
+  //   max-height: 100%;
+  // }
+
+  .ceo-name {
+    color: $--navy-9;
+    text-align: right;
+    font-family: 'Hiragino Kaku Gothic ProN W3';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 36px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .message-first-section {
+    padding: 32px 17px;
+    border-radius: 24px;
+
+
+    .social-icons .facebook-icon a, .social-icons .linkedin-icon a {
+      width: 32px;
+      height: 32px;
+    }
+    .ceo-img {
+    display: none;
+    }
+
+    .ceo-mob-img {
+      display: initial;
+      margin-bottom: 0px;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .message-h2 {
+      font-size: 20px;
+      padding: 0px;
+    }
+
+    .ceo-text {
+      padding: 0px;
+    }
+    .ceo-bottom-info {
+      padding-right: 0px;
+    }
+  }
+
+  .message-second-section {
+    padding: 32px 17px;
+    border-radius: 24px;
+
+    .ceo-img {
+      margin-bottom: 0px;
+    }
+
+    .message-h2 {
+      font-size: 20px;
+      padding: 0px;
+    }
+
+    .ceo-text {
+      padding: 0px;
+    }
+  }
+}

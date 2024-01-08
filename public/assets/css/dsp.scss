@@ -1,0 +1,237 @@
+@import './varibales.scss';
+.developement-above-sec {
+  padding: 0px 100px;
+}
+.sdh-bg {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  background: url('/assets/images/sdh-bg.png');
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.aboutsdh-section {
+  border-radius: 64px 64px 0px 0px;
+  background: $--white;
+  padding: 80px 101px 105px;
+
+  .box-left {
+    padding-right: 34px;
+  }
+  .sdhcountry-flags {
+    .sdh-country-flags {
+      display: flex;
+      gap: 8px;
+      .flag img {
+        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .aboutsdh-h2 {
+    color: $--navy-9;
+    font-family: 'Hiragino Kaku Gothic ProN W6';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: 1.6px;
+    margin-bottom: 32px;
+  }
+
+  .aboutsdh-p {
+    color: $--neutral-neutral-8;
+    font-family: 'Hiragino Kaku Gothic ProN W3';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28.8px;
+    margin-bottom: 32px;
+  }
+
+  .aboutsdh-image {
+    border-radius: 24px;
+    width: 100%;
+    height: 354px;
+    object-fit: cover;
+  }
+
+  .flag-text {
+    color: $--neutral-neutral-8;
+    font-family: 'Hiragino Kaku Gothic ProN W6';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0.7px;
+    margin-bottom: 12px;
+  }
+}
+
+.idenbrid-developement-section {
+  background-image: url('../../assets/images/develope-frame.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: -25px 0px 80px;
+  padding: 104px 0px 80px 0px;
+  position: relative;
+  z-index: 1;
+  border-radius: 32px;
+  .dev-h2 {
+    font-family: 'Hiragino Kaku Gothic ProN W6';
+    color: var(--white);
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 1.2px;
+  }
+  .dev-p {
+    color: var(--white);
+    line-height: 28.8px;
+    font-size: 16px;
+    font-family: 'Hiragino Kaku Gothic ProN W3';
+    font-weight: 300;
+  }
+  .slider-box {
+    border-radius: 32px;
+    background: $--white;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.08);
+    padding: 100px 80px;
+    z-index: 0;
+    position: relative;
+    height: 383px;
+    max-height: 100%;
+  }
+  .count-no {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    color: $--yellow-yellow-1;
+    text-align: right;
+    font-family: 'Brandon Grotesque Bold';
+    font-weight: 450;
+    font-size: 120px;
+    letter-spacing: 2.4px;
+    line-height: 92px;
+    z-index: -1;
+  }
+  .slider-h3 {
+    color: $--navy-9;
+    font-family: 'Hiragino Kaku Gothic ProN W6';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 1.2px;
+    margin-bottom: 24px;
+  }
+  .slider-p {
+    color: $--neutral-neutral-8;
+    font-family: 'Hiragino Kaku Gothic ProN W3';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28.8px;
+    letter-spacing: 0.8px;
+    margin-bottom: 0px;
+  }
+
+  .silder-item {
+    padding: 80px 0px 0px 116px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .aboutsdh-section {
+    border-radius: 24px;
+    padding: 24px 9px 73px;
+
+    .aboutsdh-image {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+    }
+
+    .aboutsdh-h2 {
+      font-size: 21px;
+      line-height: 31.5px;
+      margin-top: 24px;
+      margin-bottom: 20px;
+      letter-spacing: 1.05px;
+    }
+
+    .aboutsdh-p {
+      color: $--neutral-neutral-8;
+      font-family: 'Hiragino Kaku Gothic ProN W3';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 25.2px;
+      letter-spacing: 0.7px;
+      margin-bottom: 20px;
+    }
+
+    .box-left {
+      padding-right: 0px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .developement-above-sec {
+    padding: 0px 17px;
+  }
+  .idenbrid-developement-section {
+    padding: 32px 9px;
+    margin: -25px 0px 64px;
+    border-radius: 24px;
+    background-image: url('../../assets/images/Dsp-poa bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+
+
+    .silder-item {
+      padding: 0px 0px 0px 32px;
+    }
+    .slider-box {
+      height: 283px;
+      padding: 24px;
+      border-radius: 24px;
+    }
+    .slider-h3 {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 12px;
+      letter-spacing: 0.8px;
+    }
+    .slider-p {
+      font-size: 14px;
+      line-height: 25.2px;
+      letter-spacing: 0.7px;
+    }
+    .silder-item {
+      margin-top: 24px;
+    }
+    .dev-h2 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+    .dev-p {
+      font-size: 14px;
+      margin-bottom: 8px;
+      line-height: 25.2px;
+      letter-spacing: 0.7px;
+    }
+    .count-no {
+      right: 16px;
+      top: -10px;
+      font-size: 80px;
+      line-height: 80px;
+      letter-spacing: 1.6px;
+    }
+  }
+}

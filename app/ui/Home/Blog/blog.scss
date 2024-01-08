@@ -1,0 +1,200 @@
+@import 'public/assets/css/varibales.scss';
+
+.section-blog-listing {
+	padding: 120px 0px;
+	.blog-heading h3 {
+		color: $--navy-9;
+		font-family: Hiragino Kaku Gothic ProN W3;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 16.8px;
+		letter-spacing: 0.7px;
+		margin-bottom: 0px;
+	}
+	.blog-section-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 32px;
+
+		.blog-title p {
+			color: $--navy-9;
+			font-family: 'Brandon Grotesque Bold';
+			font-size: 48px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 57.6px;
+			letter-spacing: 1.92px;
+			position: relative;
+			z-index: 2;
+			margin-bottom: 4px;
+		}
+		.blog-view-more-button a {
+			color: $--navy-9;
+			font-family: 'Brandon Grotesque Bold';
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 450;
+			line-height: 24px;
+			letter-spacing: 0.8px;
+			position: relative;
+			z-index: 2;
+			display: flex;
+			align-items: center;
+		}
+		svg {
+			margin-left: 2px;
+		}
+		.right-arrow {
+			position: relative;
+			top: 2px;
+			margin-left: -6px;
+			z-index: -1;
+		}
+		.blog-view-more-button a:hover .right-arrow svg rect {
+			fill: $--yellow-yellow-4;
+			transition: 0.5s;
+		}
+	}
+	.blog-card {
+		padding: 24px 24px 32px;
+		border: none;
+		border-radius: 32px;
+		height: 100%;
+	}
+
+	.card-img-top {
+		border-radius: 8px;
+		width: 100%;
+		height: auto;
+	}
+	.blog-card-body {
+		padding: 16px 0px;
+	}
+	.card-text {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		color: $--navy-9;
+		font-family: Hiragino Kaku Gothic ProN W6;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 28.8px;
+		letter-spacing: 0.8px;
+		a {
+			color: inherit;
+		}
+	}
+	.card-footer {
+		border: none;
+		padding: 0px;
+		background-color: transparent;
+		.blog-category-btn {
+			display: flex;
+			padding: 6px 8px;
+			align-items: flex-start;
+			border-radius: 4px;
+			background: $--navy-9;
+			display: inline-flex;
+		}
+		.blog-category-btn a {
+			color: $--white;
+			font-family: Hiragino Kaku Gothic ProN W3;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 12px;
+			letter-spacing: 0.6px;
+			text-transform: capitalize;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.section-blog-listing {
+		background-image: url(/assets/images/bg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 64px 0px 64px 0px;
+		background-position-y: -200px;
+
+		.blog-heading h3 {
+			margin-bottom: 8px;
+		}
+
+		.blog-section-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			padding: 0px 9px;
+			.blog-title p {
+				font-size: 32px;
+				line-height: 38.4px;
+				letter-spacing: 1.28px;
+				margin-bottom: 8px;
+			}
+			.right-arrow {
+				position: relative;
+				margin-left: -6px;
+				z-index: -1;
+			}
+		}
+		.blog-card {
+			padding: 16px 16px 24px;
+			height: auto;
+			margin-bottom: 16px;
+			margin-left: 9px;
+			margin-right: 9px;
+		}
+
+		.card-img-top {
+			border-radius: 8px;
+			// width: 100%;
+			// height: auto;
+		}
+		.blog-card-body {
+			padding: 16px 0px;
+		}
+		.card-footer {
+			border: none;
+			padding: 0px;
+			background-color: transparent;
+			.blog-category-btn {
+				display: flex;
+				padding: 6px 8px;
+				align-items: flex-start;
+				border-radius: 4px;
+				background: $--navy-9;
+				display: inline-flex;
+			}
+			.blog-category-btn a {
+				color: $--white;
+				font-family: SF Pro;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 12px;
+				letter-spacing: 0.6px;
+				text-transform: capitalize;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+	.section-blog-listing {
+		.col-md-6:nth-child(odd) {
+			padding-left: 0;
+      margin-bottom: 24px;
+		}
+		.col-md-6:nth-child(even) {
+			padding-right: 0;
+      margin-bottom: 24px;
+		}
+	}
+}

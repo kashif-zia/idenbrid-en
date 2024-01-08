@@ -1,0 +1,422 @@
+@import './varibales.scss';
+
+.section-blog-detail-page {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.blog-bg {
+		width: -webkit-fill-available;
+		height: -webkit-fill-available;
+		background: url('/assets/images/blog-bg.png');
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: -1;
+	}
+
+	.section-blog-content {
+		width: 100%;
+		font-family: 'Hiragino Kaku Gothic ProN W3';
+		max-width: 1376px;
+		width: 100%;
+		margin-top: 64px;
+		margin-left: auto;
+		margin-right: auto;
+
+		.flex-wrapper {
+			display: flex;
+			column-gap: 48px;
+		}
+	}
+
+	.blog-detail-card {
+		z-index: 1;
+		padding: 64px;
+		border-radius: 32px;
+		background: $--white;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.article-list {
+		display: block;
+	}
+
+	.side-article-list-wrapper {
+		display: flex;
+		flex-direction: column;
+		row-gap: 24px;
+
+		.d-flex {
+			column-gap: 12px;
+		}
+	}
+
+	.blog-list {
+		padding: 32px;
+		width: 350px;
+		color: $--navy-9;
+
+		.list-header {
+			color: var(--Navy-9, #141485);
+			font-family: 'Hiragino Kaku Gothic ProN W6';
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 27px;
+			letter-spacing: 0.9px;
+			margin-bottom: 24px;
+		}
+
+		.list-item-description {
+			color: $--navy-9;
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 21px;
+			max-height: 63px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+		:hover {
+			text-decoration: none;
+		}
+
+		.list-item-image {
+			border-radius: 8px;
+		}
+	}
+
+	.article-title {
+		color: var(--Neutral-Neutral-8, #404040);
+		font-weight: 600;
+		font-size: 32px;
+		line-height: 48px;
+		letter-spacing: 1.6px
+	}
+
+	.blog-header-image {
+		border-radius: 8px;
+		margin: 32px 0px 40px;
+		width: 100%;
+		height: auto;
+	}
+
+	.article-by {
+		color: var(--Neutral-Neutral-8, #404040);
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 25.2px;
+		margin: 24px 0px 0px 0px;
+	}
+
+	.body-content {
+		gap: 40px;
+		display: grid;
+
+		* {
+			margin: 0;
+		}
+
+		ul {
+			background-color: #fafafa;
+			border-radius: 8px;
+			padding: 16px 24px;
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 21px;
+			color: var(--Gray-Gray-7, #495057);
+
+		}
+
+		li {
+			padding: 8px 0px;
+		}
+
+		li:not(:last-child) {
+			border-bottom: 1px solid #efefef;
+		}
+
+		p {
+			color: var(--Neutral-Neutral-8, #404040);
+
+			font-family: 'Hiragino Kaku Gothic ProN W3';
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 28.8px;
+		}
+
+		h1 {
+			color: var(--Neutral-Neutral-8, #404040);
+			font-size: 32px;
+			line-height: 48px;
+			font-weight: 600;
+		}
+
+		h2 {
+			color: var(--Neutral-Neutral-8, #404040);
+			font-size: 26px;
+			line-height: 39px;
+			font-weight: 600;
+			letter-spacing: 1.3px
+		}
+
+		h3 {
+			color: var(--Neutral-Neutral-8, #404040);
+			font-size: 21px;
+			line-height: 31.5px;
+			font-weight: 600;
+			letter-spacing: 1.05px;
+		}
+
+		h4 {
+			color: var(--Neutral-Neutral-8, #404040);
+			font-size: 18px;
+			line-height: 27px;
+			font-weight: 600;
+			letter-spacing: 0.9px;
+		}
+
+		h5 {
+			color: var(--Neutral-Neutral-8, #404040);
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: 600;
+			letter-spacing: 0.8px;
+		}
+
+		h6 {
+			color: var(--Neutral-Neutral-8, #404040);
+			font-size: 14px;
+			line-height: 21px;
+			font-weight: 600;
+			letter-spacing: 0.7px;
+		}
+	}
+}
+
+.section-news-detail-pagination {
+
+
+	margin-top: 64px;
+	margin-bottom: 80px;
+	max-width: 1397px;
+    width: 100%;
+    margin-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+
+	.pagination-buttons {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: #fff;
+		padding: 40px 48px;
+		border-radius: 32px;
+		height: 120px;
+		flex: 1 0 0;
+
+		.about-idenbrid-button {
+			position: relative;
+			z-index: 2;
+			width: 100%;
+			max-width: 352px;
+		  }
+		  .brdr-right{
+			border-right: 1px solid #E5E5E5;
+			border-left: 1px solid #E5E5E5;
+			display: flex;
+			justify-content: center;
+		  }
+		  .prev-btn{
+			text-align: right;
+			display: flex;
+			justify-content: end;
+		  }
+		
+		
+
+		.about-idenbrid-button a {
+			color: #141485;
+			font-family: 'Brandon Grotesque Bold';
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 450;
+			line-height: 24px;
+			letter-spacing: 1px;
+			background-color: transparent;
+			border: none;
+			padding: 0;
+			display: flex;
+			align-items: center;
+			
+			
+
+		}
+
+		.arrow-left{
+		
+			margin-right: -6px; 
+			z-index: -1;
+		}
+		.arrow-right{
+		
+			margin-left: -6px; 
+			z-index: -1;
+		}
+	}
+}
+
+@media (max-width: 1100px) {
+	.section-blog-detail-page {
+		.section-blog-content {
+			margin-top: 48px;
+
+			.flex-wrapper {
+				column-gap: 30px;
+			}
+		}
+
+		.blog-detail-card {
+			padding: 30px;
+		}
+
+		.article-title {
+			font-size: 26px;
+			line-height: 29px;
+		}
+
+		.blog-list {
+			padding: 24px;
+			width: 262.5px;
+		}
+
+		.article-by {
+			margin: 20px 0px 0px 0px;
+		}
+
+		.blog-header-image {
+			margin: 28px 0px 32x;
+		}
+
+		.body-content {
+			h1 {
+				font-size: 26px;
+				line-height: 29px;
+			}
+
+			h2 {
+				font-size: 23.5px;
+				line-height: 34px;
+			}
+
+			h3 {
+				font-size: 19.5px;
+				line-height: 29.25px;
+			}
+
+			h4 {
+				font-size: 17px;
+				line-height: 25.5px;
+			}
+
+			h5 {
+				font-size: 15px;
+				line-height: 22.5px;
+			}
+
+			h6 {
+				font-size: 13px;
+				line-height: 19.5px;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+
+	.section-news-detail-pagination {
+		display: none;
+	}
+	.blog-page-wrapper {
+		.container-fluid {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	.section-blog-detail-page {
+		margin-bottom: 40px;
+		.article-list {
+			display: none;
+		}
+
+		.section-blog-content {
+			margin-top: 30px;
+		}
+
+		.blog-detail-card {
+			padding: 24px 24px 40px 24px;
+		}
+
+		.article-title {
+			font-size: 21px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 29.4px;
+			/* 29.4px */
+			letter-spacing: 1.05px;
+		}
+
+		.article-by {
+			margin: 16px 0px 0px 0px;
+		}
+
+		.blog-header-image {
+			margin: 21px 0px 21px;
+		}
+
+		.body-content {
+			h1 {
+				font-size: 21px;
+				line-height: 29.4px;
+			}
+
+			h2 {
+				font-size: 21px;
+				line-height: 31.5px;
+				letter-spacing: 1.05px;
+			}
+
+			h3 {
+				font-size: 18px;
+				line-height: 27px;
+				letter-spacing: 0.9px;
+			}
+
+			h4 {
+				font-size: 16px;
+				line-height: 24px;
+				letter-spacing: 0.8px;
+			}
+
+			h5 {
+				font-size: 14px;
+				line-height: 21px;
+			}
+
+			h6 {
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 21px;
+				letter-spacing: 0.7px;
+			}
+		}
+	}
+}

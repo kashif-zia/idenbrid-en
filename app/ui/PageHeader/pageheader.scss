@@ -1,0 +1,55 @@
+@import 'public/assets/css/varibales.scss';
+
+.section-page-header {
+  position: relative;
+  padding: 48px 0px 80px 0;
+
+  .page-header-content {
+    .page-name h3 {
+      color: $--navy-9;
+      font-family: 'Brandon Grotesque Bold';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 420;
+      line-height: 16px;
+      letter-spacing: 0.8px;
+      text-align: center;
+    }
+
+    .page-title {
+      display: flex;
+      justify-content: center;
+    }
+
+    .page-title p {
+      color: $--navy-9;
+      font-family: 'Hiragino Kaku Gothic ProN W6';
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 48px;
+      letter-spacing: 1.6px;
+      margin-bottom: 0px;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .section-page-header {
+    padding: 44px 0px;
+
+    .page-header-content {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width:500px) {
+  .section-page-header {
+    .page-title {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

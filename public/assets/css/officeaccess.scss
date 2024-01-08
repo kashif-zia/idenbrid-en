@@ -1,0 +1,215 @@
+@import './varibales.scss';
+
+.office-bg {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  background: url('/assets/images/office-bg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.office-environment-section {
+  border-radius: 64px;
+  background: $--white;
+  padding: 120px 0px;
+  box-shadow: 0px 8px 40px 0px rgba(20, 20, 133, 0.08);
+
+  .swiper-wrapper {
+    left: -15%;
+  }
+
+  .office-subtext {
+    color: $--navy-9;
+    font-family: 'Hiragino Kaku Gothic ProN W6';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    margin-bottom: 0px;
+  }
+
+  .office-h2 {
+    color: $--navy-9;
+    font-family: 'Brandon Grotesque Bold';
+    font-size: 32px;
+    margin-bottom: 24px;
+    font-weight: 450;
+    line-height: 48px;
+    letter-spacing: 1.6px;
+  }
+
+  .office-text {
+    color: $--neutral-neutral-8;
+    font-family: 'Hiragino Kaku Gothic ProN W3';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28.8px;
+  }
+
+  .office-img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 32px;
+  }
+
+  .office-text {
+    margin-bottom: 80px;
+  }
+
+  .officemap-area {
+    padding-top: 120px;
+  }
+
+  .access-subtext {
+    color: $--navy-9;
+    font-family: 'Hiragino Kaku Gothic ProN W6';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 0px;
+    letter-spacing: 0.8px;
+  }
+
+  .access-h2 {
+    color: $--navy-9;
+    font-family: 'Brandon Grotesque Bold';
+    font-size: 32px;
+    font-weight: 450;
+    line-height: 48px;
+    letter-spacing: 1.6px;
+    margin-bottom: 40px;
+  }
+
+  .access-p {
+    color: $--navy-9;
+    font-family: 'Hiragino Kaku Gothic ProN W3';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28.8px;
+  }
+
+  .access-tel {
+    margin-bottom: 0px;
+  }
+
+  .acess-map-url {
+    margin-bottom: 0px;
+
+    a {
+      color: #3945d8;
+      text-decoration: underline !important;
+    }
+  }
+
+  .point13 {
+    color: var(--Navy-9, #141485);
+    margin-top: 40px;
+    font-family: 'Hiragino Kaku Gothic ProN W6';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0.9px;
+    margin-bottom: 8px;
+  }
+
+  .access-address,
+  .access-mail,
+  .access-info {
+    margin-bottom: 8px;
+  }
+
+  .last-access-info {
+    margin-bottom: 40px;
+  }
+
+  .access-map a {
+    text-decoration: underline !important;
+    color: $--Navy-6;
+    text-transform: uppercase;
+    font-family: 'Hiragino Kaku Gothic ProN W3';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28.8px;
+  }
+
+  .access-tel a,
+  .access-mail a {
+    text-decoration: underline !important;
+    color: $--Navy-6;
+    text-transform: lowercase;
+  }
+
+  .map-iframe {
+    border-radius: 24px;
+    max-width: 504px;
+    margin: auto;
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .office-environment-section {
+    padding: 32px 0px;
+    border-radius: 24px;
+
+    .office-environment-section-content {
+      padding: 0 17px;
+    }
+
+
+
+    .access-address,
+    .access-mail,
+    .access-info {
+      margin-bottom: 24px;
+    }
+  
+    .office-h2 {
+      margin-bottom: 16px;
+    }
+
+    .map-iframe {
+      width: 100%;
+      max-width: 100%;
+      height: 296px;
+    }
+
+    .acess-map-url {
+      margin-bottom: 48px;
+    }
+
+    .officemap-area {
+      padding-top: 48px;
+    }
+
+    .office-img {
+      height: 180px;
+    }
+
+    .office-text {
+      margin-bottom: 32px;
+      font-size: 14px;
+    }
+
+    .office-subtext {
+      font-size: 14px;
+    }
+
+    .access-p {
+      margin-bottom: 48px;
+    }
+    .access-h2 {
+      margin-bottom: 24px;
+    }
+    .point13 {
+      margin-top: 24px;
+    }
+  }
+}

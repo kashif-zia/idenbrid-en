@@ -1,0 +1,287 @@
+@import './varibales.scss';
+
+.route-wrapper{
+  min-height: auto;
+}
+
+.section-contact-us-page {
+  padding: 0px 0px 120px 0px;
+  z-index: 2;
+
+  .center-text {
+    text-align: center !important;
+  }
+
+  .contact-us-bg-img {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background: url('/assets/images/contact-us-bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .contact-form-content {
+    background: $--white;
+    width: 100%;
+    max-width: 1040px;
+    padding: 120px;
+    margin: 0px auto;
+    border-radius: 64px;
+
+    .company-title h1 {
+      color: $--navy-9;
+      text-align: center;
+      font-family: 'Hiragino Kaku Gothic ProN W3';
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 20px;
+      margin-bottom: 0px;
+    }
+
+    .contact-form {
+      margin: 56px 0px;
+
+      .contact-form-input {
+        display: flex;
+        column-gap: 32px;
+        align-items: flex-start;
+        margin-bottom: 32px;
+
+        .input-label {
+          width: 100%;
+          max-width: 200px;
+          display: flex;
+          padding-top: 8px;
+        }
+
+        .input-label label {
+          color: $--navy-9;
+          font-family: 'Hiragino Kaku Gothic ProN W6';
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 18px;
+          letter-spacing: 0.9px;
+          margin-bottom: 0px;
+        }
+
+        .input-label span {
+          border-radius: 2px;
+          background: #ffe066;
+          display: inline-block;
+          margin-left: 8px;
+          padding: 4px 8px;
+          font-family: 'Hiragino Kaku Gothic ProN W6';
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 12px;
+        }
+
+        .form-input {
+          width: 100%;
+        }
+
+        :focus-visible {
+          outline: 0px;
+        }
+
+        .form-input input {
+          height: 48px;
+          width: 100%;
+          border-radius: 4px;
+          border: 1px solid #a3a3a3;
+          background: $--white;
+          padding: 12px;
+        }
+
+
+        .form-input input:hover,
+        .form-input select:hover,
+        .form-input textarea:hover {
+          border: 1px solid $--navy-navy-8;
+          box-shadow: none;
+        }
+
+        .form-input input:focus,
+        .form-input select:focus,
+        .form-input textarea:focus {
+          border: 1px solid $--navy-navy-8;
+          box-shadow: none;
+        }
+
+        .form-input input.error-validation:hover,
+        .form-input select.error-validation:hover,
+        .form-input textarea.error-validation:hover {
+          border: 1px solid $--red-600;
+          box-shadow: none;
+        }
+
+        .form-input input.error-validation:focus,
+        .form-input select.error-validation:focus,
+        .form-input textarea.error-validation:focus {
+          border: 2px solid $--red-600;
+          box-shadow: none;
+        }
+
+        .form-input input[type='number']::-webkit-inner-spin-button,
+        .form-input input[type='number']::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+        }
+
+        .form-input input[type='number'] {
+          -moz-appearance: textfield;
+        }
+
+        .form-input select {
+          height: 48px;
+          width: 100%;
+          border-radius: 4px;
+          border: 1px solid #a3a3a3;
+          background: $--white;
+          padding: 12px;
+          color: #d4d4d8;
+          font-size: 16px;
+        }
+
+        .form-input textarea {
+          height: 48px;
+          width: 100%;
+          border-radius: 4px;
+          border: 1px solid #a3a3a3;
+          background: $--white;
+          padding: 16px;
+          height: 128px;
+        }
+      }
+    }
+
+    .contact-agree-title p {
+      color: #575757;
+      font-family: 'Hiragino Kaku Gothic ProN W3';
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+
+    .contact-agree-title a {
+      color: #1723a9;
+      font-family: 'Hiragino Kaku Gothic ProN W3';
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 150%;
+    }
+
+    .contact-agree-title a:hover {
+      text-decoration: none;
+    }
+
+    .contact-form-submit-btn {
+      display: flex;
+      width: 400px;
+      height: 72px;
+      padding: 0px 32px;
+      justify-content: center;
+      align-items: center;
+      margin: 24px auto 0px auto;
+      border-radius: 100px;
+      background: linear-gradient(142deg, #102f9e 0%, #4800a5 100%);
+      box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      letter-spacing: 0.9px;
+      font-family: 'Hiragino Kaku Gothic ProN W6';
+      border: 0px;
+      transition: 0.2s all;
+    }
+    .contact-form-submit-btn:hover {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%),
+        linear-gradient(98deg, #102f9e 2.96%, #4800a5 105.92%);
+    }
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .section-contact-us-page {
+    padding: 0px 0px 80px 0px;
+
+    .contact-form-content {
+      padding: 32px;
+      margin: 0px auto;
+      border-radius: 24px;
+
+      .company-title h1 {
+        line-height: 30px;
+      }
+
+      .contact-form {
+        margin: 40px 0px;
+
+        .contact-form-input {
+          display: flex;
+          flex-direction: column;
+          column-gap: 32px;
+          align-items: flex-start;
+          margin-bottom: 24px;
+
+          .input-label {
+            margin-bottom: 16px;
+          }
+
+          .form-input select {
+            height: 48px;
+            width: 100%;
+            border-radius: 4px;
+            border: 1px solid #a3a3a3;
+            background: $--white;
+            padding: 12px;
+          }
+
+          .form-input textarea {
+            height: 48px;
+            width: 100%;
+            border-radius: 4px;
+            border: 1px solid #a3a3a3;
+            background: $--white;
+            padding: 16px;
+            height: 128px;
+          }
+        }
+      }
+
+      .contact-agree-title p {
+        text-align: left;
+      }
+
+      .contact-agree-title a {
+        color: #1723a9;
+        font-family: 'Hiragino Kaku Gothic ProN W3';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 150%;
+      }
+
+      .contact-agree-title a:hover {
+        text-decoration: none;
+      }
+
+      .contact-form-submit-btn {
+        display: flex;
+        height: 56px;
+        max-width: 296px;
+        width: 100%;
+        padding: 0px 32px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

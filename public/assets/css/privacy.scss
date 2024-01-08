@@ -1,0 +1,122 @@
+@import './varibales.scss';
+.section-privacy-page {
+	z-index: 2;
+	margin-bottom: 120px;
+	.privacy-bg {
+		width: -webkit-fill-available;
+		height: -webkit-fill-available;
+		background: url(/assets/images/privacy-bg.png);
+		background-size: 100%;
+		background-repeat: repeat;
+		position: absolute;
+		right: 0;
+		// top: -4%;
+		z-index: -1;
+		height: 100%;
+	}
+	.privacy-form-content {
+		background: #fff;
+		width: 100%;
+		max-width: 1040px;
+		border-radius: 64px;
+		margin: 0px auto;
+		padding: 120px;
+		.privacy-desc p {
+			color: #404040;
+			font-family: 'Hiragino Kaku Gothic ProN W3';
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 28.8px;
+			margin-bottom: 40px;
+      strong{
+        color: $--navy-9;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 450;
+				line-height: 28.8px;
+				margin-right: 8px;
+      }
+		}
+		.privacy-title h6 {
+			color: $--navy-navy-8;
+			font-family: 'Hiragino Kaku Gothic ProN W6';
+			font-size: 21px;
+			font-weight: 600;
+			line-height: 31.5px;
+			letter-spacing: 1.05px;
+			margin-bottom: 8px;
+		}
+		.privacy-desc.list-heading p {
+			margin-bottom: 8px;
+		}
+		.privacy-list-item {
+			color: $--neutral-8;
+			font-family: 'Hiragino Kaku Gothic ProN W3';
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 28.8px;
+			padding: 0 0 0 8px;
+			margin: 0px 0px 8px 20px;
+			list-style: decimal;
+			&::marker {
+				color: var(--Navy-Navy-8, #1723A9);
+				font-family: 'Brandon Grotesque Bold';
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 450;
+				line-height: 28.8px;
+				margin-right: 8px;
+				gap: 8px;
+		
+			}
+		}
+		.privacy-desc-list {
+			margin-bottom: 40px;
+		}
+		.footer-copyright {
+			display: block;
+			margin-left: auto;
+			width: 100%;
+			max-width: 360px;
+			p {
+				margin-bottom: 5px;
+				color: $--neutral-8;
+				font-family: 'Hiragino Kaku Gothic ProN W3';
+				font-size: 16px;
+				font-weight: 450;
+				line-height: 28.8px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 768px) {
+	.section-privacy-page {
+		.privacy-bg {
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		margin-bottom: 80px;
+		.privacy-form-content {
+			border-radius: 24px;
+			padding: 32px;
+			box-shadow: 0px 8px 40px 0px rgba(20, 20, 133, 0.08);
+			.privacy-desc p {
+				font-size: 14px;
+				line-height: 25.2px;
+			}
+			.privacy-title h6 {
+				font-size: 18px;
+				line-height: 27px;
+				letter-spacing: 0.9px;
+			}
+			.privacy-desc.list-heading p {
+				margin-bottom: 8px;
+			}
+			.privacy-list-item {
+				font-size: 14px;
+				line-height: 25.2px;
+			}
+		}
+	}
+}

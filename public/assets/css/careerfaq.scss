@@ -1,0 +1,307 @@
+@import '../../assets/css/varibales.scss';
+
+.section-careerfaq-page {
+	z-index: 2;
+	margin-bottom: 120px;
+
+	.career-faq-bg {
+		width: -webkit-fill-available;
+		height: -webkit-fill-available;
+		background: url(/assets/images/faqs-bg.png);
+		background-size: 100%;
+		background-repeat: repeat;
+		position: absolute;
+		right: 0;
+		z-index: -1;
+		height: 100%;
+	}
+
+	.faq-form-content {
+		background: #fff;
+		width: 100%;
+		max-width: 1040px;
+		border-radius: 64px;
+		margin: 0px auto;
+		padding: 80px;
+
+		.accordion-item .accordion-header {
+			margin-bottom: 0px;
+		}
+
+		.accordion.accordion-flush {
+			width: 100%;
+		}
+
+		.career.accordion-body {
+			padding: 40px;
+			background-color: #fafafa;
+			border-bottom: 1px solid #e5e5e5;
+			.bordr-bottom {
+				border-top: none;
+			}
+			.faq-apply-button button {
+				margin-bottom: 0;
+			}
+			.requirment-block-content {
+				padding: 0;
+				padding-top: 24px;
+			}
+		}
+
+		.First-accordian {
+			border-top: 1px solid #e5e5e5;
+		}
+
+		.accordion-item .accordion-header button {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border: none;
+			background: transparent;
+			border-bottom: 1px solid #e5e5e5;
+			// border-top: 1px solid #e5e5e5;
+			width: 100%;
+			text-align: start;
+			padding: 16px 16px 16px 8px;
+			color: $--navy-navy-8;
+			font-family: 'Hiragino Kaku Gothic ProN W6';
+			font-size: 21px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 31.5px;
+			letter-spacing: 1.05px;
+			height: 64px;
+
+			.header-content-wrapper {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				column-gap: 12px;
+				font-family: 'Hiragino Kaku Gothic ProN W6';
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 27px;
+				letter-spacing: 0.9px;
+			}
+		}
+
+		.accordion-button:not(.collapsed):after {
+			content: '';
+			background-image: url(/assets/images/icon_remove.svg);
+			width: 24px;
+			height: 24px;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.accordion-button.collapsed:after {
+			content: '';
+			background-image: url(/assets/images/icon_add.svg);
+			width: 24px;
+			height: 24px;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.icon {
+			width: 32px;
+			height: 32px;
+		}
+	}
+
+	.accordion-body {
+		.requirment-block-content {
+			display: flex;
+			padding: 24px 40px 0px 40px;
+			&:first-child {
+				padding-top: 40px;
+			}
+			.requirment-block-title {
+				width: 100%;
+				max-width: 109px;
+				margin-right: 40px;
+			}
+
+			.requirment-block-title h6 {
+				color: $--neutral-neutral-8;
+				font-feature-settings: 'palt' on;
+				font-family: 'Hiragino Kaku Gothic ProN W6';
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 24px;
+				letter-spacing: 0.8px;
+			}
+
+			.requirment-block-desc p {
+				font-size: 14px;
+				line-height: 25.2px;
+			}
+		}
+
+		.desc-box {
+			display: flex;
+			padding: 24px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 24px;
+			align-self: stretch;
+			border-bottom: 1px solid #e5e5e5;
+			background: #fafafa;
+		}
+
+		.block-desc {
+			display: flex;
+			align-items: flex-start;
+			gap: 12px;
+			align-self: stretch;
+		}
+	}
+
+	.faq-apply-button button {
+		display: flex;
+		width: 100%;
+		max-width: 320px;
+		height: 56px;
+		padding: 0px 32px;
+		justify-content: center;
+		align-items: center;
+		gap: 8px;
+		border-radius: 100px;
+		background: linear-gradient(98deg, #102f9e 2.96%, #4800a5 105.92%);
+		box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+		color: $--white;
+		font-feature-settings: 'palt' on;
+		font-family: 'Hiragino Kaku Gothic StdN W6';
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 21px;
+		letter-spacing: 0.7px;
+		margin: 24px auto 40px;
+		border: none;
+	}
+
+	p {
+		color: $--neutral-neutral-8;
+		font-family: 'Hiragino Kaku Gothic ProN W3';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 28.8px;
+		margin-bottom: 0;
+	}
+
+	.bordr-bottom {
+		border-top: 1px solid white;
+		border-bottom: 1px solid #e5e5e5;
+		background-color: #fafafa;
+	}
+
+	.margin-btm {
+		margin-bottom: 24px !important;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.section-careerfaq-page {
+		z-index: 2;
+		margin-bottom: 80px;
+
+		.faq-form-content {
+			border-radius: 24px;
+			margin: 0px auto;
+			padding: 32px 0px;
+			box-shadow: 0px 8px 40px 0px rgba(20, 20, 133, 0.08);
+			.career.accordion-body {
+				padding: 24px;
+				background-color: #fafafa;
+				border-bottom: 1px solid #e5e5e5;
+				.bordr-bottom {
+					border-top: none;
+				}
+				.faq-apply-button button {
+					margin-bottom: 0;
+				}
+				.requirment-block-content {
+					padding: 0;
+					padding-top: 24px;
+				}
+			}
+
+			.accordion-item .accordion-header {
+				margin-bottom: 0px;
+			}
+
+			.accordion-item .accordion-header button {
+				padding: 16px;
+				font-size: 18px;
+				line-height: 27px;
+				letter-spacing: 0.9px;
+
+				.header-content-wrapper {
+					align-items: flex-start;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 600;
+					line-height: 24px;
+					letter-spacing: 0.8px;
+				}
+			}
+
+			.desc-box {
+				padding: 16px;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 300;
+				line-height: 25.2px;
+			}
+
+			.icon {
+				width: 24px;
+				height: 24px;
+			}
+		}
+
+		.accordion-body {
+			padding: 0px;
+
+			.requirment-block-content {
+				flex-direction: column;
+				padding: 24px 24px 0px 24px;
+				&:first-child {
+					padding-top: 24px;
+				}
+
+				.requirment-block-title {
+					width: 100%;
+					max-width: 109px;
+					margin-right: 40px;
+
+					h6 {
+						margin-bottom: 16px;
+					}
+				}
+			}
+		}
+
+		.faq-apply-button button {
+			margin: 24px auto;
+		}
+
+		p {
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 27px;
+		}
+
+		.bordr-bottom {
+			border-bottom: 1px solid #e5e5e5;
+		}
+
+		.margin-btm {
+			margin-bottom: 24px !important;
+		}
+	}
+}

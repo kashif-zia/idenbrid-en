@@ -1,0 +1,45 @@
+<svg width="312" height="349" viewBox="0 0 312 349" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.2">
+<circle cx="299" cy="348" r="3" fill="white"/>
+<circle cx="269" cy="348" r="3" fill="white"/>
+<circle cx="239" cy="348" r="3" fill="white"/>
+<circle cx="209" cy="348" r="3" fill="white"/>
+<circle cx="179" cy="348" r="3" fill="white"/>
+<circle cx="299" cy="318" r="3" fill="white"/>
+<circle cx="269" cy="318" r="3" fill="white"/>
+<circle cx="239" cy="318" r="3" fill="white"/>
+<circle cx="209" cy="318" r="3" fill="white"/>
+<circle cx="179" cy="318" r="3" fill="white"/>
+<circle cx="299" cy="288" r="3" fill="white"/>
+<circle cx="269" cy="288" r="3" fill="white"/>
+<circle cx="239" cy="288" r="3" fill="white"/>
+<circle cx="209" cy="288" r="3" fill="white"/>
+<circle cx="179" cy="288" r="3" fill="white"/>
+<circle cx="299" cy="258" r="3" fill="white"/>
+<circle cx="269" cy="258" r="3" fill="white"/>
+<circle cx="239" cy="258" r="3" fill="white"/>
+<circle cx="209" cy="258" r="3" fill="white"/>
+<circle cx="179" cy="258" r="3" fill="white"/>
+</g>
+<path d="M299.6 154.5L315.5 126.997L331.4 154.5H299.6Z" stroke="#F7DD4B" stroke-width="3"/>
+<g opacity="0.2">
+<circle cx="113" cy="108" r="3" fill="white"/>
+<circle cx="83" cy="108" r="3" fill="white"/>
+<circle cx="53" cy="108" r="3" fill="white"/>
+<circle cx="23" cy="108" r="3" fill="white"/>
+<circle cx="113" cy="78" r="3" fill="white"/>
+<circle cx="83" cy="78" r="3" fill="white"/>
+<circle cx="53" cy="78" r="3" fill="white"/>
+<circle cx="23" cy="78" r="3" fill="white"/>
+<circle cx="113" cy="48" r="3" fill="white"/>
+<circle cx="83" cy="48" r="3" fill="white"/>
+<circle cx="53" cy="48" r="3" fill="white"/>
+<circle cx="23" cy="48" r="3" fill="white"/>
+<circle cx="113" cy="18" r="3" fill="white"/>
+<circle cx="83" cy="18" r="3" fill="white"/>
+<circle cx="53" cy="18" r="3" fill="white"/>
+<circle cx="23" cy="18" r="3" fill="white"/>
+</g>
+<path d="M264 55.5C264 51.7528 262.973 48.0774 261.03 44.873C259.088 41.6686 256.304 39.058 252.982 37.3248C249.66 35.5915 245.926 34.8021 242.187 35.0421C238.447 35.2822 234.845 36.5426 231.772 38.6864L233.976 41.8469C236.472 40.1061 239.397 39.0827 242.434 38.8877C245.47 38.6928 248.502 39.3339 251.2 40.7413C253.897 42.1487 256.158 44.2686 257.735 46.8706C259.312 49.4726 260.146 52.4572 260.146 55.5H264Z" fill="white"/>
+<path opacity="0.2" d="M244.305 74.8018C243.336 78.4213 243.376 82.2373 244.423 85.8353C245.47 89.4332 247.483 92.6753 250.244 95.2094C253.004 97.7434 256.406 99.4723 260.08 100.208C263.755 100.944 267.56 100.659 271.084 99.3838L269.772 95.7603C266.911 96.7959 263.821 97.0274 260.837 96.4298C257.854 95.8322 255.091 94.4282 252.85 92.3706C250.608 90.3129 248.973 87.6802 248.123 84.7586C247.273 81.837 247.24 78.7382 248.028 75.7992L244.305 74.8018Z" fill="white"/>
+</svg>

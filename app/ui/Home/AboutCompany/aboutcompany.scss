@@ -1,0 +1,376 @@
+@import 'public/assets/css/varibales.scss';
+
+.aboutcompany-section {
+	border-radius: 32px;
+	// background: linear-gradient(180deg, #102F9E 0%, #4800A5 100%);
+	background-image: url(/assets/images/about.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	padding: 80px 0px;
+
+	.member-heading-box {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.member-img {
+		width: 100%;
+		max-width: 320px;
+		object-fit: cover;
+	}
+	.member-img-link {
+		display: flex;
+		margin: auto;
+	}
+	.about-h2 {
+		color: $--white;
+		font-family: 'Brandon Grotesque Bold';
+		font-size: 48px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 57.6px;
+		letter-spacing: 1.28px;
+		text-transform: capitalize;
+		margin-bottom: 16px;
+		margin-top: 8px;
+	}
+
+	.about-subtext {
+		color: $--white;
+		font-family: Hiragino Kaku Gothic ProN W6;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 25.2px;
+		letter-spacing: 0.7px;
+	}
+
+	.about-text {
+		color: $--white;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 25.2px;
+		letter-spacing: 0.7px;
+		margin-bottom: 0px;
+		margin-top: 24px;
+		font-family: Hiragino Kaku Gothic ProN W6;
+	}
+
+	.about-viewbtn {
+		color: $--navy-9;
+		font-family: 'Brandon Grotesque Bold';
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 21px;
+		letter-spacing: 0.7px;
+		border-radius: 100px;
+		background-color: $--yellow-yellow-3;
+		box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+		border: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 130px;
+		height: 56px;
+		margin-top: 32px;
+	}
+
+	.divider {
+		width: 40px;
+		height: 3px;
+		background: $--white;
+		display: block;
+	}
+
+	.about-viewbtn:hover {
+		background-color: $--yellow-yellow-4;
+		color: $--navy-9;
+		text-decoration: none;
+	}
+
+	.top-cards {
+		display: flex;
+
+		.card-body {
+			padding: 16px 24px 24px;
+		}
+
+		.cardImage-left {
+			height: 168px;
+			object-fit: cover;
+			border-radius: 12px 0px 0px 0px;
+		}
+
+		.cardImage-right {
+			height: 168px;
+			object-fit: cover;
+			border-radius: 0px 12px 0px 0px;
+		}
+
+		.custom-card-left {
+			border: none;
+			border-radius: 12px 0px 0px 12px;
+			border-right: 1px solid $--envelope-white;
+			width: 50%;
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
+
+		.custom-card-right {
+			border: none;
+			border-radius: 0px 12px 12px 0px;
+			width: 50%;
+		}
+
+		.card-title {
+			color: $--navy-9;
+			font-family: Hiragino Kaku Gothic ProN W6;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 28.8px;
+			letter-spacing: 0.8px;
+			margin-bottom: 4px;
+		}
+
+		.card-text {
+			color: $--navy-9;
+			font-family: Hiragino Kaku Gothic ProN W3;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 25.2px;
+			letter-spacing: 0.7px;
+		}
+	}
+
+	.bottom-cards {
+		display: flex;
+		margin-top: 24px;
+
+		.bottom-card {
+			border-radius: 12px;
+			width: 50%;
+		}
+		.card-text {
+			color: $--navy-9;
+			font-family: Hiragino Kaku Gothic ProN W3;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 25.2px;
+			letter-spacing: 0.7px;
+		}
+
+		.imageover-text {
+			position: absolute;
+			bottom: 10px;
+			color: $--white;
+			font-family: Hiragino Kaku Gothic ProN W6;
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 16px;
+			letter-spacing: 0.8px;
+			margin-bottom: 8px;
+		}
+
+		.card-img-overlay {
+			background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 33.85%, rgba(0, 0, 0, 0.5) 100%);
+			padding: 16px;
+			border-radius: 12px;
+		}
+
+		.company-img,
+		.company-img-overlay {
+			border-top-left-radius: 12px;
+			border-bottom-left-radius: 12px;
+			border-top-right-radius: 0px;
+			border-bottom-right-radius: 0px;
+		}
+
+		.member-img,
+		.member-img-overlay {
+			border-radius: 0px;
+		}
+
+		.office-img,
+		.office-img-overlay {
+			border-top-right-radius: 12px;
+			border-top-right-radius: 12px;
+			border-top-left-radius: 0px;
+			border-bottom-left-radius: 0px;
+			border-bottom-right-radius: 12px;
+		}
+	}
+
+	.member-slider-section {
+		margin-top: 80px;
+
+		.slider-container {
+			margin-top: 24px;
+			padding: 0;
+		}
+
+		.member-h2 {
+			color: $--white;
+			font-family: 'Brandon Grotesque Bold';
+			font-size: 40px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 48px;
+			letter-spacing: 1.6px;
+			text-transform: capitalize;
+			margin-bottom: 4px;
+		}
+
+		.member-subtext {
+			color: $--white;
+			font-family: Hiragino Kaku Gothic ProN W6;
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 25.2px;
+			letter-spacing: 0.7px;
+			margin-bottom: 0px;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.aboutcompany-section {
+		.about-h2 {
+			font-size: 32px;
+			line-height: 38.6px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.aboutcompany-section {
+		padding: 38px 9px 55px;
+		.member-heading-box {
+			padding: 0 9px;
+		}
+		.bottom-cards {
+			display: none;
+		}
+		.about-h2 {
+			font-size: 32px;
+			line-height: 38.6px;
+		}
+
+		.divider,
+		.about-viewbtn {
+			margin: 0 9px;
+			margin-top: 32px;
+		}
+		.about-h2,
+		.about-subtext,
+		.about-text {
+			padding: 0 9px;
+		}
+
+		.top-cards {
+			margin-top: 64px;
+			flex-direction: column;
+			padding: 0 9px;
+
+			.custom-card-left {
+				width: 100%;
+				border-radius: 12px 12px 0px 0px;
+			}
+
+			.custom-card-right {
+				width: 100%;
+				border-radius: 0px 0px 12px 12px;
+			}
+
+			.cardImage-right {
+				border-radius: 0px;
+			}
+
+			.cardImage-left {
+				border-radius: 12px 12px 0px 0px;
+			}
+		}
+
+		.bottom-cards {
+			.company-img,
+			.member-img,
+			.office-img {
+				height: 112px;
+				object-fit: fill;
+			}
+		}
+
+		.member-slider-section {
+			.member-h2 {
+				font-size: 24px;
+				max-width: 160px;
+				line-height: 28.8px;
+				letter-spacing: 0.96px;
+			}
+		}
+
+		.member-slider-section {
+			margin-top: 58px;
+		}
+		.member-img {
+			width: 100%;
+			// max-width: 160px;
+			object-fit: cover;
+		}
+	}
+}
+
+@media (max-width: 475px) {
+	.aboutcompany-section {
+		background-image: url(/assets/images/about-mbl-bg.svg);
+		.divider,
+		.about-viewbtn {
+			margin: 0 0;
+		}
+		.about-viewbtn {
+			margin-top: 32px;
+		}
+		.member-heading-box{
+			justify-content: flex-end;
+		}
+		.member-slider-section {
+			margin-top: 194px;
+			.member-heading{
+				display: none;
+			}
+		}
+		.about-h2,
+		.about-subtext,
+		.about-text,
+		.top-cards,
+		.member-heading-box {
+			padding: 0 0;
+		}
+		.member-slider-section {
+			.slider-container {
+				padding: 0;
+				margin-top: 66px;
+				.row {
+					padding: 0;
+					.col {
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.aboutcompany-section {
+		margin-top: 25px;
+	}
+}

@@ -1,0 +1,403 @@
+@import './varibales.scss';
+.section-about-page {
+	.about-bg-img {
+		width: -webkit-fill-available;
+		height: -webkit-fill-available;
+		background: url('/assets/images/about-bg.png');
+		background-size: 100%;
+		background-repeat: repeat;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: -1;
+	}
+	.section-about-page-content {
+		padding: 120px 0px 40px;
+		border-radius: 64px;
+		background: $--white;
+		margin-bottom: 80px;
+		.about-page-col {
+			margin-bottom: 80px;
+			padding-left: 20px;
+			padding-right: 20px;
+			.about-page-card {	
+				border: 0px;
+				.card-img-top {
+					border-radius: 8px;
+				}
+				.about-card-body {
+					padding: 0px;
+					.about-card-title {
+						color: $--navy-9;
+						font-family: 'Hiragino Kaku Gothic ProN W6';
+						font-size: 24px;
+						// font-style: normal;
+						font-weight: 600;
+						line-height: 32.4px;
+						letter-spacing: 1.2px;
+						margin: 24px 0px 12px;
+					}
+					.about-card-text {
+						color: $--neutral-neutral-8;
+						font-family: 'Hiragino Kaku Gothic ProN W3';
+						font-size: 16px;
+						font-style: normal;
+						font-weight: 300;
+						line-height: 24px;
+						letter-spacing: 0.8px;
+					}
+				}
+			}
+			.border-right {
+				border-right: 1px solid $--envelope-white;
+				padding-right: 32px;
+				border-radius: 0px;
+			}
+		}
+		.about-page-col a {
+			text-decoration: none;
+		}
+		.about-page-col a:hover {
+			color: inherit;
+		}
+	}
+}
+@media only screen and (max-width: 767px) {
+	.section-about-page {
+		position: relative;
+		z-index: 2;
+		.about-bg-img {
+			top: 0px;
+		}
+		.section-about-page-content {
+			padding: 32px 0px;
+			margin-bottom: 64px;
+			border-radius: 24px;
+			.about-page-col {
+				margin-bottom: 32px;
+				padding: 0px 32px 0px 32px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+				.about-page-card {
+					padding-right: 0px;
+					.card-img-top {
+						border-radius: 8px;
+					}
+					.about-card-body {
+						padding: 0px;
+						.about-card-title {
+							font-size: 20px;
+							line-height: 27px;
+							letter-spacing: 1px;
+							margin: 16px 0px 8px;
+						}
+					}
+				}
+				.border-right {
+					padding-right: 0px;
+				}
+			}
+			.about-page-col a {
+				text-decoration: none;
+			}
+			.about-page-col a:hover {
+				color: inherit;
+			}
+		}
+	}
+}
+
+@media (min-width:426px) and (max-width: 768px) {
+	.section-about-page {
+		.call-to-action {
+			margin-left: 0px;
+			margin-right: 0px;
+	}
+	}
+}
+
+//////////////////////
+
+
+@import '../../assets/css/varibales.scss';
+
+.section-careerfaq-page {
+	z-index: 2;
+	margin-bottom: 120px;
+
+	.career-faq-bg {
+		width: -webkit-fill-available;
+		height: -webkit-fill-available;
+		background: url(/assets/images/faqs-bg.png);
+		background-size: 100%;
+		background-repeat: repeat;
+		position: absolute;
+		right: 0;
+		z-index: -1;
+		height: 100%;
+	}
+
+	.faq-form-content {
+		background: #fff;
+		width: 100%;
+		max-width: 1040px;
+		border-radius: 64px;
+		margin: 0px auto;
+		padding: 80px;
+
+		.accordion-item .accordion-header {
+			margin-bottom: 0px;
+		}
+
+		.accordion.accordion-flush {
+			width: 100%;
+		}
+
+		.First-accordian {
+			border-top: 1px solid #e5e5e5;
+			;
+		}
+
+		.accordion-item .accordion-header button {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border: none;
+			background: transparent;
+			border-bottom: 1px solid #e5e5e5;
+			width: 100%;
+			text-align: start;
+			padding: 24px;
+			color: $--navy-navy-8;
+			font-family: 'Hiragino Kaku Gothic ProN W6';
+
+
+			.header-content-wrapper {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				column-gap: 12px;
+				font-family: 'Hiragino Kaku Gothic ProN W6';
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 27px;
+				letter-spacing: 0.9px;
+
+			}
+		}
+
+		.accordion-button:not(.collapsed):after {
+			content: '';
+			background-image: url(/assets/images/icon_remove.svg);
+			width: 24px;
+			height: 24px;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.accordion-button.collapsed:after {
+			content: '';
+			background-image: url(/assets/images/icon_add.svg);
+			width: 24px;
+			height: 24px;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.icon {
+			width: 32px;
+			height: 32px;
+		}
+	}
+
+	.accordion-body {
+		.requirment-block-content {
+			display: flex;
+			padding: 40px;
+
+			.requirment-block-title {
+				width: 100%;
+				max-width: 109px;
+				margin-right: 40px;
+			}
+
+			.requirment-block-title h6 {
+				color: $--neutral-neutral-8;
+				font-feature-settings: 'palt' on;
+				font-family: 'Hiragino Kaku Gothic ProN W6';
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 24px;
+				letter-spacing: 0.8px;
+			}
+
+			.requirment-block-desc p {
+				font-size: 14px;
+				line-height: 25.2px;
+			}
+		}
+
+		.desc-box {
+			display: flex;
+			padding: 24px;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 24px;
+			align-self: stretch;
+			border-bottom: 1px solid #e5e5e5;
+			background: #fafafa;
+		}
+
+		.block-desc {
+			display: flex;
+			align-items: flex-start;
+			gap: 12px;
+			align-self: stretch;
+		}
+	}
+	.faq-apply-button button {
+		display: flex;
+		width: 100%;
+		max-width: 320px;
+		height: 56px;
+		padding: 0px 32px;
+		justify-content: center;
+		align-items: center;
+		gap: 8px;
+		border-radius: 100px;
+		background: linear-gradient(98deg, #102f9e 2.96%, #4800a5 105.92%);
+		box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+		color: $--white;
+		font-feature-settings: 'palt' on;
+		font-family: 'Hiragino Kaku Gothic StdN W6';
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 21px;
+		letter-spacing: 0.7px;
+		margin: 40px auto 40px;
+		border: none;
+	}
+
+	p {
+		color: $--neutral-neutral-8;
+		font-family: 'Hiragino Kaku Gothic ProN W3';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 28.8px;
+		margin-bottom: 0;
+	}
+
+	.bordr-bottom {
+		border-bottom: 1px solid #e5e5e5;
+		background-color: #FAFAFA;
+	}
+
+	.margin-btm {
+		margin-bottom: 24px !important;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.section-careerfaq-page {
+		z-index: 2;
+		margin-bottom: 120px;
+
+		.faq-form-content {
+			border-radius: 24px;
+			margin: 0px auto;
+			padding: 32px 0px;
+			box-shadow: 0px 8px 40px 0px rgba(20, 20, 133, 0.08);
+
+			.accordion-item .accordion-header {
+				margin-bottom: 0px;
+			}
+
+			.accordion-item .accordion-header button {
+				padding: 16px;
+				font-size: 18px;
+				line-height: 27px;
+				letter-spacing: 0.9px;
+
+				.header-content-wrapper {
+					align-items: flex-start;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 600;
+					line-height: 24px;
+					letter-spacing: 0.8px;
+				}
+			}
+
+			.desc-box {
+
+				padding: 16px;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 300;
+				line-height: 25.2px;
+
+			}
+
+			.icon {
+				width: 24px;
+				height: 24px;
+			}
+		}
+
+		.accordion-body {
+			padding: 0px;
+
+			.requirment-block-content {
+				flex-direction: column;
+				padding: 24px;
+
+				.requirment-block-title {
+					width: 100%;
+					max-width: 109px;
+					margin-right: 40px;
+				}
+			}
+
+		}
+		.faq-apply-button button {
+			display: flex;
+			width: 100%;
+			max-width: 320px;
+			height: 56px;
+			padding: 0px 32px;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			border-radius: 100px;
+			background: linear-gradient(98deg, #102f9e 2.96%, #4800a5 105.92%);
+			box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+			color: $--white;
+			font-family: 'Hiragino Kaku Gothic StdN W6';
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 21px;
+			letter-spacing: 0.7px;
+			margin: 40px auto 0px;
+			border: 0px;
+		}
+
+		p {
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 27px;
+		}
+
+		.bordr-bottom {
+			border-bottom: 1px solid #e5e5e5;
+		}
+
+		.margin-btm {
+			margin-bottom: 24px !important;
+		}
+	}
+}

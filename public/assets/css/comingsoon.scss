@@ -1,0 +1,41 @@
+@import './varibales.scss';
+
+.section-coming-soon-page {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .coming-soon-bg {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background: url('/assets/images/coming-soon-bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  .section-coming-soon-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .en-title {
+    text-align: center;
+    color: $--navy-9;
+    font-size: 40px;
+    font-family: 'Brandon Grotesque Bold';
+    font-weight: 450;
+    letter-spacing: 2px;
+  }
+  .jp-title {
+    text-align: center;
+    color: $--navy-9;
+    font-size: 16px;
+    font-family: 'Hiragino Kaku Gothic ProN W6';
+    font-weight: 600;
+    letter-spacing: 0.8px;
+  }
+}

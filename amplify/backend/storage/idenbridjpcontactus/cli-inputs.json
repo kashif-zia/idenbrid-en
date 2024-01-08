@@ -1,0 +1,14 @@
+{
+  "resourceName": "idenbridjpcontactus",
+  "tableName": "idenbridjpcontactus",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "createdAt",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

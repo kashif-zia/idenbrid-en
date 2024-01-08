@@ -1,0 +1,177 @@
+@import './varibales.scss';
+
+.section-news-detail-page {
+  z-index: 2;
+  margin: 32px 0px 40px;
+  .news-detail-bg {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background: url(/assets/images/faqs-bg.png);
+    background-size: 100%;
+    background-repeat: repeat;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+  }
+  .news-detail-form-content {
+    background: #fff;
+    border-radius: 32px;
+    margin: 0px auto;
+    padding: 64px;
+    .new-detail-title h1 {
+      color: $--neutral-neutral-8;
+      font-family: 'Hiragino Kaku Gothic ProN W6';
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 48px;
+      letter-spacing: 1.6px;
+      margin-bottom: 0px;
+    }
+    .new-detail-sub-title p {
+      color: $--neutral-neutral-8;
+      font-family: 'Hiragino Kaku Gothic ProN W6';
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 48px;
+      letter-spacing: 1.6px;
+      margin-bottom: 24px;
+    }
+    .news-date p {
+      color: $--neutral-neutral-8;
+      font-family: 'Hiragino Kaku Gothic ProN W3';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 25.2px;
+      margin-bottom: 0px;
+    }
+    .news-desc p {
+      color: $--neutral-neutral-8;
+      font-family: 'Hiragino Kaku Gothic ProN W3';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 28.8px;
+      margin-top: 40px;
+      margin-bottom: 0px;
+    }
+  }
+}
+.section-news-detail-pagination {
+  margin-bottom: 80px;
+  .pagination-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 40px 48px;
+    border-radius: 32px;
+    height: 120px;
+    .about-idenbrid-button {
+			position: relative;
+			z-index: 2;
+			width: 100%;
+			max-width: 352px;
+		  }
+		  .brdr-right{
+			border-right: 1px solid #E5E5E5;
+			border-left: 1px solid #E5E5E5;
+			display: flex;
+			justify-content: center;
+		  }
+		  .prev-btn{
+			text-align: right;
+			display: flex;
+			justify-content: end;
+		  }
+		
+		
+    .about-idenbrid-button a {
+      color: #141485;
+      font-family: 'Brandon Grotesque Bold';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 450;
+      line-height: 24px;
+      letter-spacing: 0.8px;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .arrow-left{
+		
+			margin-right: -6px; 
+			z-index: -1;
+		}
+		.arrow-right{
+		
+			margin-left: -6px; 
+			z-index: -1;
+		}
+    
+  }
+}
+.rightarrow-svg {
+  top: 2px;
+  margin-left: -6px;
+  position: relative;
+  z-index: -1;
+}
+@media only screen and (max-width: 768px) {
+  .section-news-detail-pagination {
+    display: none;
+  }
+  .section-news-detail-page {
+    z-index: 2;
+    margin-bottom: 24px;
+    .news-detail-form-content {
+      border-radius: 24px;
+      padding: 24px 24px 40px;
+      .new-detail-title h1 {
+        font-size: 21px;
+        line-height: 29.4px;
+        letter-spacing: 1.05px;
+        font-weight: 600;
+      }
+      .new-detail-sub-title p {
+          font-size: 21px;
+        line-height: 29.4px;
+        letter-spacing: 1.05px;
+        margin-bottom: 16px;
+      }
+      .news-desc p {
+      margin-top: 24px;
+      }
+    }
+  }
+  .section-news-detail-pagination {
+    margin-bottom: 80px;
+    padding: 0px 24px;
+    .pagination-buttons {
+      padding: 12px 16px;
+      height: 64px;
+      .about-idenbrid-button {
+        position: relative;
+        z-index: 2;
+      }
+      .rightarrow-svg {
+        top: 2px;
+        margin-left: -6px;
+        position: relative;
+        z-index: -1;
+      }
+    }
+  }
+  .rightarrow-svg {
+    top: 2px;
+    margin-left: -6px;
+    position: relative;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,371 @@
+@import '../../../public/assets/css/varibales.scss';
+
+.sidebar-contact-btn {
+  border-radius: 48px;
+  background: $--yellow-yellow-3;
+  position: absolute;
+  bottom: 28px;
+  left: 20px;
+  display: flex;
+  width: 244px;
+  height: 56px;
+  padding: 0px 24px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  color: var(--Navy-9, #141485);
+  font-family: 'Hiragino Kaku Gothic StdN W6';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0.7px;
+}
+
+.sidelang-button {
+  cursor: not-allowed;
+  border-radius: 58px;
+  background: rgba(255, 255, 255, 0.1);
+  height: 32px;
+  border: none;
+  padding: 0px 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  .sidelang-slash,
+  .sidelang-en {
+    color: #ced4da;
+    font-family: 'Brandon Grotesque Bold';
+    font-size: 14px;
+    font-style: normal;
+    line-height: 15px;
+    font-weight: 450;
+    letter-spacing: 0.75px;
+  }
+
+  .sidelang-jp {
+    color: #ced4da;
+    font-family: 'Brandon Grotesque Bold';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 100%;
+    letter-spacing: 0.75px;
+  }
+  .active {
+    color: #fff;
+  }
+}
+
+.hamburger-menu,
+.side-menu-wrapper.open {
+  display: none;
+}
+.sub-nav {
+  display: flex;
+  column-gap: 16px;
+  row-gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  a {
+    color: #fff;
+    opacity: 0.6;
+    font-family: 'Brandon Grotesque Medium';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: stretch;
+  }
+}
+
+.side-menu-list {
+  margin-top: 32px;
+  padding: 12px;
+  li {
+    padding: 0;
+    margin-bottom: 24px;
+  }
+}
+
+.mobilenav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .menu-name {
+    align-self: stretch;
+    color: #fff;
+    font-family: 'Brandon Grotesque Medium';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 26px;
+    letter-spacing: 1.3px;
+    margin-bottom: 0;
+  }
+}
+
+.footerlogo {
+  width: 124.522px;
+  height: 32px;
+}
+
+.side-menu-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  color: $--white;
+  background: linear-gradient(180deg, #102f9e 0%, #4800a5 100%);
+  opacity: 0;
+  -webkit-clip-path: circle(0% at calc(100% - 47px) 93%);
+  clip-path: circle(0% at calc(100% - 47px) 93%);
+  transition: 1s cubic-bezier(0.23, 0.93, 0.23, 0.93);
+  .btns-group {
+    margin: 0px;
+  }
+}
+
+.side-menu-wrapper.open {
+  opacity: 1;
+  z-index: 1000;
+  -webkit-clip-path: circle(140% at calc(100% - 47px) 93%);
+  clip-path: circle(140% at calc(100% - 47px) 93%);
+}
+
+.side-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 3%;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.side-menu.open {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  opacity: 1;
+  transition: all 0.2s ease-in-out 0.4s;
+
+  .btns-group {
+    margin: 0px;
+  }
+}
+
+.menu-content {
+  padding: 20px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: $--white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px 0;
+}
+
+/* Add additional styles as needed */
+.visible {
+  .humbger-btn {
+    top: inherit;
+    bottom: 7px;
+    transition: bottom 0.3s ease;
+  }
+}
+
+.humbger-btn {
+  position: fixed;
+  top: 90%;
+  bottom: inherit;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 20px;
+  border-radius: 56px;
+  z-index: 9999;
+  background: $--white;
+  /* High-Shadow */
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
+  transition: bottom 0.3s ease;
+}
+
+:root {
+  --bar-bg: #212529;
+}
+
+.menu-icon {
+  position: relative;
+  width: 500px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+  div {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 22px;
+    height: 9px;
+  }
+
+  .humbger-btn {
+    display: none;
+  }
+
+  span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2.5px;
+    background-color:  #141485;
+    color: #141485;
+    border-radius: 1px;
+    transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+ 
+
+    &:first-of-type {
+      top: 0;
+    }
+
+    &:last-of-type {
+      bottom: 0;
+    }
+  }
+
+  &.active,
+  & > div.cross {
+    span {
+      &:first-of-type {
+        transform: rotate(45deg);
+        top: 2.5px;
+      }
+
+      &:last-of-type {
+        transform: rotate(-45deg);
+        bottom: 4.5px;
+      }
+    }
+  }
+
+  &.active:hover span:first-of-type,
+  &.active:hover span:last-of-type,
+  &:hover .menu-icon__cheeckbox:checked + div span:first-of-type,
+  &:hover .menu-icon__cheeckbox:checked + div span:last-of-type {
+    width: 22px;
+  }
+
+  &:hover {
+    // no need hover effect on mobile.
+    @media (min-width: 1024px) {
+      span:first-of-type {
+        width: 26px;
+      }
+
+      span:last-of-type {
+        width: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .hamburger-menu,
+  .side-menu-wrapper.open {
+    display: block;
+  }
+}
+@media (max-width: 360px) {
+  .sidebar-contact-btn {
+    width: 100%;
+    max-width: 244px;
+  }
+}
+
+@media (max-width: 345px) {
+  .sidebar-contact-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+.circle-wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  width: 100%;
+  height: 100%;
+
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+
+  animation: appearFromBottomRight 2s ease-in-out;
+  color: $--white;
+  z-index: 1000;
+
+  // transition: transform 0.3s ease-in-out; /* Apply transition to the transform property */
+  // transform: translateX(100%) translateY(100%) scale(0);
+}
+
+.circle {
+  bottom: 0;
+  right: 0;
+  width: 100vw; /* 100% of viewport width */
+  height: 100vh; /* 100% of viewport height */
+  // background-color: #3498db;
+
+  background: linear-gradient(180deg, #102f9e 0%, #4800a5 100%);
+  border-radius: 50%;
+  animation: growCircle 2s ease-in-out;
+}
+
+@keyframes appearFromBottomRight {
+  from {
+    transform: translate(100%, 100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes growCircle {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

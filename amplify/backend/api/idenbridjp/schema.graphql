@@ -1,0 +1,125 @@
+type IdenbridUser
+  @model
+  @auth(
+    rules: [
+      { allow: public, operations: [read] }
+      { allow: private, operations: [read] }
+      { allow: owner, ownerField: "id", operations: [read, update] }
+    ]
+  ) {
+  id: ID!
+  name: String
+  email: String
+  avatar: String
+  about: String
+  role: String
+  status: String
+  createdAt: AWSDateTime
+}
+
+type IdenbridBlogs
+  @model
+  @auth(
+    rules: [
+      { allow: public, operations: [read] }
+      { allow: private, operations: [read] }
+      { allow: owner, ownerField: "ownerId", operations: [create, read, delete, update] }
+    ]
+  ) {
+  id: ID!
+  title_jp: String!
+  title_en: String!
+  description_jp: String
+  description_en: String
+  body_jp: String!
+  body_en: String!
+  slug: String! @index(name: "bySlug", sortKeyFields: ["createdAt"], queryField: "getBlogsBySlug")
+  thumbnail: String
+  ownerId: ID!
+  owner: IdenbridUser! @hasOne(fields: ["ownerId"])
+  tags_en: [String]
+  tags_jp: [String]
+  meta_title_en: String
+  meta_title_jp: String
+  meta_description_en: String
+  meta_description_jp: String
+  meta_keywords_en: [String]
+  meta_keywords_jp: [String]
+  isPublished: Boolean
+  createdAt: AWSDateTime
+}
+
+type IdenbridNews
+  @model
+  @auth(
+    rules: [
+      { allow: public, operations: [read] }
+      { allow: private, operations: [read] }
+      { allow: owner, ownerField: "ownerId", operations: [create, read, delete, update] }
+    ]
+  ) {
+  id: ID!
+  ownerId: ID!
+  owner: IdenbridUser! @hasOne(fields: ["ownerId"])
+  title_jp: String!
+  title_en: String!
+  description_jp: String
+  description_en: String
+  body_jp: String!
+  body_en: String!
+  slug: String! @index(name: "bySlug", sortKeyFields: ["createdAt"], queryField: "getNewsBySlug")
+  thumbnail: String
+  meta_title_jp: String
+  meta_title_en: String
+  tags_jp: [String]
+  tags_en: [String]
+  meta_description_jp: String
+  meta_description_en: String
+  meta_keywords_jp: [String]
+  meta_keywords_en: [String]
+  isPublished: Boolean!
+  createdAt: AWSDateTime
+}
+
+type IdenbridWork
+  @model
+  @auth(
+    rules: [
+      { allow: public, operations: [read] }
+      { allow: private, operations: [read] }
+      { allow: owner, ownerField: "ownerId", operations: [create, read, delete, update] }
+    ]
+  ) {
+  id: ID!
+  ownerId: ID!
+  owner: IdenbridUser! @hasOne(fields: ["ownerId"])
+  title_jp: String!
+  title_en: String!
+  description_en: String
+  description_jp: String
+  body_jp: String!
+  body_en: String!
+  slug: String! @index(name: "bySlug", sortKeyFields: ["createdAt"], queryField: "getWorkBySlug")
+  thumbnail: String
+  tags_jp: [String]
+  tags_en: [String]
+  meta_title_jp: String
+  meta_title_en: String
+  meta_description_jp: String
+  meta_description_en: String
+  meta_keywords_en: [String]
+  meta_keywords_jp: [String]
+  isPublished: Boolean!
+  createdAt: AWSDateTime
+}
+
+type IdenbridContact @auth(rules: [{ allow: public }, { allow: private }]) @model {
+  id: ID!
+  inchargePerson: String!
+  inquiryMatter: String
+  companyName: String
+  email: String!
+  phoneNo: String!
+  description: String!
+  createdAt: AWSDateTime
+}
